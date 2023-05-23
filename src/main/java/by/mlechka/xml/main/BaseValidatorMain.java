@@ -1,4 +1,4 @@
-package by.mlechka.xml;
+package by.mlechka.xml.main;
 
 import java.io.*;
 import javax.xml.XMLConstants;
@@ -7,12 +7,14 @@ import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
+
+import by.mlechka.xml.handler.CandyErrorHandler;
 import org.xml.sax.SAXException;
 public class BaseValidatorMain {
     public static void main(String[] args) {
         String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
-        String fileName = "src/main/resources/xml/candies4.xml";
-        String schemaName = "src/main/resources/xml/candies4.xsd";
+        String fileName = "src/main/resources/xml/candies.xml";
+        String schemaName = "src/main/resources/xml/candies.xsd";
         SchemaFactory factory = SchemaFactory.newInstance(language);
         File schemaLocation = new File(schemaName);
         try {

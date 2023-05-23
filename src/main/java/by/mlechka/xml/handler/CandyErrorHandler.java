@@ -1,4 +1,4 @@
-package by.mlechka.xml;
+package by.mlechka.xml.handler;
 
 import org.xml.sax.ErrorHandler;
 import org.apache.logging.log4j.LogManager;

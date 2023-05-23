@@ -1,4 +1,4 @@
-package by.mlechka.xml;
+package by.mlechka.xml.handler;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;

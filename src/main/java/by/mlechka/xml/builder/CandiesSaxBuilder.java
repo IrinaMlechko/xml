@@ -1,6 +1,6 @@
 package by.mlechka.xml.builder;
 
-import by.mlechka.xml.CandyErrorHandler;
+import by.mlechka.xml.handler.CandyErrorHandler;
 import by.mlechka.xml.entity.Candy;
 import by.mlechka.xml.handler.CandyHandler;
 import org.xml.sax.SAXException;

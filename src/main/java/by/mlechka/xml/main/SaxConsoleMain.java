@@ -1,5 +1,6 @@
-package by.mlechka.xml;
+package by.mlechka.xml.main;
 
+import by.mlechka.xml.handler.ConsoleCandyHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import javax.xml.parsers.ParserConfigurationException;
@@ -15,7 +16,7 @@ public class SaxConsoleMain {
             XMLReader reader = parser.getXMLReader();
             reader.setContentHandler(new ConsoleCandyHandler());
 //            reader.setErrorHandler(new CandyErrorHandler());
-            reader.parse("src/main/resources/xml/candies4.xml");
+            reader.parse("src/main/resources/xml/candies.xml");
         } catch (SAXException | IOException | ParserConfigurationException e) {
             e.printStackTrace();
         }
