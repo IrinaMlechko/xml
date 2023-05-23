@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="candies">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="candy" type="candy" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="candy">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string" minOccurs="1"/>
+            <xsd:element name="energy" type="energyType" minOccurs="1"/>
+            <xsd:element name="ingredients" type="ingredientsType"/>
+            <xsd:element name="value" type="valueType"/>
+            <xsd:element name="manufacturer" type="xsd:string" minOccurs="1"/>
+            <xsd:element name="variety" type="varietyType" minOccurs="0"/>
+            <xsd:element name="expiration-date" type="xsd:dateTime"
+            />
+        </xsd:sequence>
+        <xsd:attribute name="id" type="candyID" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="chocolate">
+        <xsd:complexContent>
+            <xsd:extension base="candy">
+                <xsd:sequence>
+                    <xsd:element name="chocolate-type" type="chocolateType"/>
+                    <xsd:element name="shape" type="shapeType"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="test">
+        <xsd:complexContent>
+            <xsd:extension base="candy">
+                <xsd:sequence>
+                    <xsd:element name="shape" type="shapeType"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+    <xsd:simpleType name="varietyType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="caramel"/>
+            <xsd:enumeration value="drops"/>
+            <xsd:enumeration value="toffee"/>
+<!--            <xsd:enumeration value="chocolate"/>-->
+            <xsd:enumeration value="chocolate_filled"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="ingredientsType">
+        <xsd:sequence>
+            <xsd:element name="ingredient" type="ingredientType" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ingredientType">
+        <xsd:sequence>
+            <xsd:element name="ingredientName" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="amount" type="xsd:nonNegativeInteger" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="unit" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="valueType">
+        <xsd:sequence>
+            <xsd:element name="protein" type="xsd:nonNegativeInteger"/>
+            <xsd:element name="fat" type="xsd:nonNegativeInteger"/>
+            <xsd:element name="carbohydrates" type="xsd:nonNegativeInteger"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="chocolateType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="white"/>
+            <xsd:enumeration value="dark"/>
+            <xsd:enumeration value="milk"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="shapeType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="square"/>
+            <xsd:enumeration value="rectangle"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="energyType">
+        <xsd:sequence>
+            <xsd:element name="energyAmount" type="xsd:nonNegativeInteger"/>
+            <xsd:element name="energyUnit" type="xsd:string" default="kcal"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="candyID">
+        <xsd:restriction base="xsd:ID">
+            <xsd:pattern value ="\d{1,3}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="candy" type="candy" abstract="true"/>
+    <xsd:element name="chocolate" type="chocolate" substitutionGroup="candy"/>
+    <xsd:element name="test" type="test" substitutionGroup="candy"/>
+</xsd:schema>
