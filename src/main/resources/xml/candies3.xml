@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<candies xsi:nonamespaceSchemaLocation="candies3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <candy id="AAAAA">
+        <name>Toffee</name>
+        <energy>620</energy>
+        <ingredients>
+            <water>1</water>
+            <sugar>10</sugar>
+        </ingredients>
+        <value>
+            <protein>2</protein>
+            <fat>10</fat>
+            <carbohydrates>30</carbohydrates>
+        </value>
+        <manufacturer>Toffee man</manufacturer>
+        <variety>toffee</variety>
+    </candy>
+    <candy id="AAAAB">
+        <name>string</name>
+        <energy>-384</energy>
+        <ingredients>
+            <water>-3469</water>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>-272</fat>
+            <carbohydrates>-4094</carbohydrates>
+        </value>
+        <manufacturer>string</manufacturer>
+        <variety>toffee</variety>
+    </candy>
+    <candy id="AAAAC">
+        <name>string</name>
+        <energy>-3837</energy>
+        <ingredients>
+            <water>547</water>
+        </ingredients>
+        <value>
+            <protein>-1747</protein>
+            <fat>-2080</fat>
+            <carbohydrates>1852</carbohydrates>
+        </value>
+        <manufacturer>string</manufacturer>
+        <variety>chocolate</variety>
+    </candy>
+    <candy id="AAAAD">
+        <name>string</name>
+        <energy>-3655</energy>
+        <ingredients>
+            <water>-4072</water>
+        </ingredients>
+        <value>
+            <protein>-3301</protein>
+            <fat>-1740</fat>
+            <carbohydrates>-2068</carbohydrates>
+        </value>
+        <manufacturer>string</manufacturer>
+        <variety>chocolate</variety>
+    </candy>
+    <candy id="AAAAE">
+        <name>string</name>
+        <energy>2366</energy>
+        <ingredients>
+            <water>-305</water>
+        </ingredients>
+        <value>
+            <protein>3936</protein>
+            <fat>966</fat>
+            <carbohydrates>2846</carbohydrates>
+        </value>
+        <manufacturer>string</manufacturer>
+        <variety>drops</variety>
+    </candy>
+</candies>

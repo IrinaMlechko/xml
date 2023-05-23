@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Define entities -->
+    <xs:element name="Candies" type="CandiesType"/>
+
+    <xs:complexType name="CandiesType">
+        <xs:sequence>
+            <xs:element name="Candy" type="CandyType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CandyType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Energy" type="xs:integer"/>
+            <xs:element name="Type" type="CandyTypeEnum"/>
+            <xs:element name="Ingredients" type="IngredientsType"/>
+            <xs:element name="Value" type="ValueType"/>
+            <xs:element name="Production" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="Type" type="CandyTypeEnum" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="CandyTypeEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="caramel"/>
+            <xs:enumeration value="drops"/>
+            <xs:enumeration value="toffee"/>
+            <xs:enumeration value="chocolate"/>
+            <xs:enumeration value="chocolate_filled"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="IngredientsType">
+        <xs:sequence>
+            <xs:element name="Water" type="xs:integer"/>
+            <xs:element name="Sugar" type="xs:integer" minOccurs="0"/>
+            <xs:element name="Fructose" type="xs:integer" minOccurs="0"/>
+            <xs:element name="ChocolateType" type="xs:string" minOccurs="0" default="milk"/>
+            <xs:element name="Vanillin" type="xs:integer" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="SugarUnit" type="xs:string" default="mg"/>
+        <xs:attribute name="FructoseUnit" type="xs:string" default="mg"/>
+        <xs:attribute name="ChocolateType" type="xs:string" use="optional"/>
+    </xs:complexType>
+
+
+    <xs:complexType name="ValueType">
+        <xs:sequence>
+            <xs:element name="Protein" type="xs:integer"/>
+            <xs:element name="Fat" type="xs:integer"/>
+            <xs:element name="Carbohydrates" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="ProteinUnit" type="xs:string" default="g"/>
+        <xs:attribute name="FatUnit" type="xs:string" default="g"/>
+        <xs:attribute name="CarbohydratesUnit" type="xs:string" default="g"/>
+    </xs:complexType>
+
+
+</xs:schema>

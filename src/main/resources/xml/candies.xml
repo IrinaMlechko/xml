@@ -1,101 +1,207 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
-<candies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <test id="1">
-        <name>Toffee</name>
-        <energy>
-            <energyAmount>620</energyAmount>
-            <energyUnit>kJ</energyUnit>
-        </energy>
-        <ingredients>
-            <ingredient>
-                <ingredientName>water</ingredientName>
-                <amount>10</amount>
-                <unit>ml</unit>
-            </ingredient>
-            <ingredient>
-                <ingredientName>sugar</ingredientName>
-                <amount>1</amount>
-                <unit>mg</unit>
-            </ingredient>
-            <ingredient>
-                <ingredientName>flour</ingredientName>
-                <amount>5</amount>
-                <unit>mg</unit>
-            </ingredient>
-        </ingredients>
-        <value>
-            <protein>2</protein>
-            <fat>10</fat>
-            <carbohydrates>30</carbohydrates>
-        </value>
-        <manufacturer>Toffee man</manufacturer>
-        <variety>toffee</variety>
-        <expiration-date>2023-05-22T00:00:00</expiration-date>
-    </test>
-    <test id="2">
-        <name>string</name>
-        <energy>
-            <energyAmount>328</energyAmount>
-            <energyUnit></energyUnit>
-        </energy>
-        <ingredients>
-            <ingredient>
-                <ingredientName>water</ingredientName>
-                <amount>10</amount>
-                <unit>ml</unit>
-            </ingredient>
-            <ingredient>
-                <ingredientName>sugar</ingredientName>
-                <amount>1</amount>
-                <unit>mg</unit>
-            </ingredient>
-            <ingredient>
-                <ingredientName>flour</ingredientName>
-                <amount>5</amount>
-                <unit>mg</unit>
-            </ingredient>
-        </ingredients>
-        <value>
-            <protein>4372</protein>
-            <fat>272</fat>
-            <carbohydrates>4094</carbohydrates>
-        </value>
-        <manufacturer>string</manufacturer>
-        <variety>toffee</variety>
-        <expiration-date>2023-05-22T00:00:00</expiration-date>
-    </test>
-    <chocolate id="3">
-        <name>Ritter Sport</name>
-        <energy>
-            <energyAmount>400</energyAmount>
-            <energyUnit></energyUnit>
-        </energy>
-        <ingredients>
-            <ingredient>
-                <ingredientName>water</ingredientName>
-                <amount>10</amount>
-                <unit>ml</unit>
-            </ingredient>
-            <ingredient>
-                <ingredientName>sugar</ingredientName>
-                <amount>1</amount>
-                <unit>mg</unit>
-            </ingredient>
-            <ingredient>
-                <ingredientName>flour</ingredientName>
-                <amount>5</amount>
-                <unit>mg</unit>
-            </ingredient>
-        </ingredients>
-        <value>
-            <protein>1747</protein>
-            <fat>2080</fat>
-            <carbohydrates>1852</carbohydrates>
-        </value>
-        <manufacturer>string</manufacturer>
-        <chocolate-type>white</chocolate-type>
-        <shape>square</shape>
-        <expiration-date>2023-05-22T00:00:00</expiration-date>
-    </chocolate>
-</candies>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Candies [
+        <!ELEMENT Candies (Candy+)>
+        <!ELEMENT Candy (Name,Energy,Type,Ingredients,Value,Production)>
+        <!ELEMENT Name (#PCDATA)>
+        <!ELEMENT Energy (#PCDATA)>
+        <!ELEMENT Type (#PCDATA)>
+        <!ELEMENT Ingredients (Water,Sugar?,Fructose?,ChocolateType?,Vanillin?)>
+        <!ELEMENT Water (#PCDATA)>
+        <!ELEMENT Sugar (#PCDATA)>
+        <!ELEMENT Fructose (#PCDATA)>
+        <!ELEMENT ChocolateType (#PCDATA)>
+        <!ELEMENT Vanillin (#PCDATA)>
+        <!ELEMENT Value (Protein,Fat,Carbohydrates)>
+        <!ELEMENT Protein (#PCDATA)>
+        <!ELEMENT Fat (#PCDATA)>
+        <!ELEMENT Carbohydrates (#PCDATA)>
+        <!ELEMENT Production (#PCDATA)>
+        <!ATTLIST Candy id ID #REQUIRED>
+        <!ATTLIST Sugar unit CDATA "mg">
+        <!ATTLIST Fructose unit CDATA "mg">
+        <!ATTLIST ChocolateType default CDATA #IMPLIED>
+        <!ATTLIST ChocolateType type CDATA #IMPLIED>
+        <!ATTLIST Protein unit CDATA "g">
+        <!ATTLIST Fat unit CDATA "g">
+        <!ATTLIST Carbohydrates unit CDATA "g">
+        <!ATTLIST Candy Type (caramel|chocolate|chocolate_filled) #REQUIRED>
+        <!ENTITY Snickers "Snickers">
+        <!ENTITY Bounty "Bounty">
+        <!ENTITY MilkyWay "Milky Way">
+        <!ENTITY MMs "M&amp;Ms">
+        <!ENTITY Toblerone "Toblerone">
+        <!ENTITY KitKat "KitKat">
+        <!ENTITY Twix "Twix">
+        <!ENTITY Skittles "Skittles">
+        <!ENTITY Haribo "Haribo">
+        <!ENTITY Lindt "Lindt">
+        ]>
+<Candies>
+    <Candy id="c1" Type="chocolate">
+        <Name>&Snickers;</Name>
+        <Energy>215</Energy>
+        <Type>chocolate</Type>
+        <Ingredients>
+            <Water>10</Water>
+            <Sugar unit="mg">20</Sugar>
+            <ChocolateType>milk</ChocolateType>
+            <Vanillin>5</Vanillin>
+        </Ingredients>
+        <Value>
+            <Protein unit="g">4</Protein>
+            <Fat unit="g">12</Fat>
+            <Carbohydrates unit="g">26</Carbohydrates>
+        </Value>
+        <Production>Mars, Inc.</Production>
+    </Candy>
+    <Candy id="c2" Type="chocolate_filled">
+        <Name>&Bounty;</Name>
+        <Energy>140</Energy>
+        <Type>chocolate_filled</Type>
+        <Ingredients>
+            <Water>8</Water>
+            <Sugar unit="mg">15</Sugar>
+            <Fructose unit="mg">5</Fructose>
+            <ChocolateType>dark</ChocolateType>
+        </Ingredients>
+        <Value>
+            <Protein unit="g">1</Protein>
+            <Fat unit="g">6</Fat>
+            <Carbohydrates unit="g">20</Carbohydrates>
+        </Value>
+        <Production>Mars, Inc.</Production>
+    </Candy>
+    <Candy id="c3" Type="chocolate">
+        <Name>&MilkyWay;</Name>
+        <Energy>200</Energy>
+        <Type>chocolate</Type>
+        <Ingredients>
+            <Water>12</Water>
+            <Sugar unit="mg">18</Sugar>
+            <ChocolateType>milk</ChocolateType>
+            <Vanillin>4</Vanillin>
+        </Ingredients>
+        <Value>
+            <Protein unit="g">3</Protein>
+            <Fat unit="g">8</Fat>
+            <Carbohydrates unit="g">32</Carbohydrates>
+        </Value>
+        <Production>Mars, Inc.</Production>
+    </Candy>
+    <Candy id="c4" Type="chocolate">
+        <Name>&MMs;</Name>
+        <Energy>230</Energy>
+        <Type>chocolate</Type>
+        <Ingredients>
+            <Water>10</Water>
+            <Sugar unit="mg">25</Sugar>
+            <ChocolateType>milk</ChocolateType>
+            <Vanillin>3</Vanillin>
+        </Ingredients>
+        <Value>
+            <Protein unit="g">3</Protein>
+            <Fat unit="g">9</Fat>
+            <Carbohydrates unit="g">35</Carbohydrates>
+        </Value>
+        <Production>Mars, Inc.</Production>
+    </Candy>
+    <Candy id="c5" Type="chocolate">
+        <Name>&Toblerone;</Name>
+        <Energy>520</Energy>
+        <Type>chocolate</Type>
+        <Ingredients>
+            <Water>5</Water>
+            <Sugar unit="mg">30</Sugar>
+            <ChocolateType>milk</ChocolateType>
+            <Vanillin>2</Vanillin>
+        </Ingredients>
+        <Value>
+            <Protein unit="g">7</Protein>
+            <Fat unit="g">29</Fat>
+            <Carbohydrates unit="g">62</Carbohydrates>
+        </Value>
+        <Production>Mondelēz International</Production>
+    </Candy>
+    <Candy id="c6" Type="chocolate">
+        <Name>&KitKat;</Name>
+        <Energy>207</Energy>
+        <Type>chocolate</Type>
+        <Ingredients>
+            <Water>8</Water>
+            <Sugar unit="mg">15</Sugar>
+            <ChocolateType>milk</ChocolateType>
+            <Vanillin>3</Vanillin>
+        </Ingredients>
+        <Value>
+            <Protein unit="g">2</Protein>
+            <Fat unit="g">11</Fat>
+            <Carbohydrates unit="g">27</Carbohydrates>
+        </Value>
+        <Production>Nestlé</Production>
+    </Candy>
+    <Candy id="c7" Type="chocolate_filled">
+        <Name>&Twix;</Name>
+        <Energy>230</Energy>
+        <Type>chocolate_filled</Type>
+        <Ingredients>
+            <Water>10</Water>
+            <Sugar unit="mg">20</Sugar>
+            <ChocolateType>milk</ChocolateType>
+            <Vanillin>4</Vanillin>
+        </Ingredients>
+        <Value>
+            <Protein unit="g">2</Protein>
+            <Fat unit="g">12</Fat>
+            <Carbohydrates unit="g">33</Carbohydrates>
+        </Value>
+        <Production>Mars, Inc.</Production>
+    </Candy>
+    <Candy id="c8" Type="caramel">
+        <Name>&Skittles;</Name>
+        <Energy>155</Energy>
+        <Type>caramel</Type>
+        <Ingredients>
+            <Water>10</Water>
+            <Sugar unit="mg">30</Sugar>
+            <Fructose unit="mg">5</Fructose>
+        </Ingredients>
+        <Value>
+            <Protein unit="g">0</Protein>
+            <Fat unit="g">2</Fat>
+            <Carbohydrates unit="g">36</Carbohydrates>
+        </Value>
+        <Production>Mars, Inc.</Production>
+    </Candy>
+    <Candy id="c9" Type="caramel">
+        <Name>&Haribo;</Name>
+        <Energy>140</Energy>
+        <Type>caramel</Type>
+        <Ingredients>
+            <Water>15</Water>
+            <Sugar unit="mg">25</Sugar>
+        </Ingredients>
+        <Value>
+            <Protein unit="g">2</Protein>
+            <Fat unit="g">2</Fat>
+            <Carbohydrates unit="g">36</Carbohydrates>
+        </Value>
+        <Production>Mars, Inc.</Production>
+    </Candy>
+    <Candy id="c10" Type="chocolate">
+        <Name>&Lindt;</Name>
+        <Energy>550</Energy>
+        <Type>chocolate</Type>
+        <Ingredients>
+            <Water>2</Water>
+            <Sugar unit="mg">30</Sugar>
+            <ChocolateType>dark</ChocolateType>
+            <Vanillin>1</Vanillin>
+        </Ingredients>
+        <Value>
+            <Protein unit="g">8</Protein>
+            <Fat unit="g">37</Fat>
+            <Carbohydrates unit="g">50</Carbohydrates>
+        </Value>
+        <Production>Lindt Sprüngli AG</Production>
+    </Candy>
+</Candies>

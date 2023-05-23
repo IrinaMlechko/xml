@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Candies>
+    <Candy>
+        <Name>Марс</Name>
+        <Energy>240</Energy>
+        <Type>шоколадная</Type>
+        <Type>с начинкой</Type>
+        <Ingredients>
+            <Ingredient>
+                <Name>вода</Name>
+                <Amount>10</Amount>
+                <Unit>мл</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>сахар</Name>
+                <Amount>15</Amount>
+                <Unit>мг</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>фрутоза</Name>
+                <Amount>12</Amount>
+                <Unit>мг</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>тип шоколада</Name>
+                <Amount>молочный</Amount>
+                <Unit></Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>ванилин</Name>
+                <Amount>0.5</Amount>
+                <Unit>мг</Unit>
+            </Ingredient>
+        </Ingredients>
+        <Value>
+            <Protein>2.5</Protein>
+            <Fat>11.5</Fat>
+            <Carbohydrates>31.5</Carbohydrates>
+        </Value>
+        <Production>Кондитерская фабрика "Марс"</Production>
+    </Candy>
+    <Candy>
+        <Name>Мишка на севере</Name>
+        <Energy>120</Energy>
+        <Type>карамель</Type>
+        <Ingredients>
+            <Ingredient>
+                <Name>вода</Name>
+                <Amount>5</Amount>
+                <Unit>мл</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>сахар</Name>
+                <Amount>10</Amount>
+                <Unit>мг</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>фрутоза</Name>
+                <Amount>8</Amount>
+                <Unit>мг</Unit>
+            </Ingredient>
+        </Ingredients>
+        <Value>
+            <Protein>0</Protein>
+            <Fat>0.1</Fat>
+            <Carbohydrates>28.2</Carbohydrates>
+        </Value>
+        <Production>Кондитерская фабрика "Бабаевский"</Production>
+    </Candy>
+    <Candy>
+        <Name>Сникерс</Name>
+        <Energy>250</Energy>
+        <Type>шоколадная</Type>
+        <Type>с орехами</Type>
+        <Ingredients>
+            <Ingredient>
+                <Name>вода</Name>
+                <Amount>8</Amount>
+                <Unit>мл</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>сахар</Name>
+                <Amount>16</Amount>
+                <Unit>мг</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>фрутоза</Name>
+                <Amount>15</Amount>
+                <Unit>мг</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>тип шоколада</Name>
+                <Amount>молочный</Amount>
+                <Unit></Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>ванилин</Name>
+                <Amount>0.5</Amount>
+                <Unit>мг</Unit>
+            </Ingredient>
+        </Ingredients>
+        <Value>
+            <Protein>2.5</Protein>
+            <Fat>11.5</Fat>
+            <Carbohydrates>31.5</Carbohydrates>
+        </Value>
+        <Production>Кондитерская фабрика "Марс"</Production>
+    </Candy>
+    <Candy>
+        <Name>Сникерс</Name>
+        <Energy>251</Energy>
+        <Type>шоколадная</Type>
+        <Type>с орехами</Type>
+        <Ingredients>
+            <Ingredient>
+                <Name>молочный шоколад</Name>
+                <Amount>50</Amount>
+                <Unit>г</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>арахис</Name>
+                <Amount>20</Amount>
+                <Unit>г</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>глюкозно-фруктозный сироп</Name>
+                <Amount>14</Amount>
+                <Unit>г</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>сахар</Name>
+                <Amount>25</Amount>
+                <Unit>г</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>растительное масло</Name>
+                <Amount>10</Amount>
+                <Unit>г</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>сывороточный порошок</Name>
+                <Amount>2</Amount>
+                <Unit>г</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>молоко сухое</Name>
+                <Amount>2</Amount>
+                <Unit>г</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>соль</Name>
+                <Amount>0.15</Amount>
+                <Unit>г</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>эмульгатор: лецитин сои</Name>
+                <Amount>0.03</Amount>
+                <Unit>г</Unit>
+            </Ingredient>
+            <Ingredient>
+                <Name>ванилин</Name>
+                <Amount>0.01</Amount>
+                <Unit>г</Unit>
+            </Ingredient>
+        </Ingredients>
+        <Value>
+            <Protein>4.3</Protein>
+            <Fat>12.1</Fat>
+            <Carbohydrates>56.3</Carbohydrates>
+        </Value>
+        <Production>Кондитерская фабрика "Марс"</Production>
+    </Candy>
+    <Candy>
+        <Name>Twix</Name>
+        <Energy>484</Energy>
+        <Type>шоколадная</Type>
+        <Type>с карамелью</Type>
+        <Type>с печеньем</Type>
+        <Ingredients>
+            <Ingredient>
+                <Name>молочный шоколад</Name>
+                <Amount>35.7</Amount>
+                <Unit>г</Unit>
+            </Ingredient>
+            <Ingredient>
+            <Name>ванилин</Name>
+            <Amount>0.01</Amount>
+            <Unit>г</Unit>
+            </Ingredient>
+        </Ingredients>
+        <Value>
+            <Protein>4.3</Protein>
+            <Fat>12.1</Fat>
+            <Carbohydrates>56.3</Carbohydrates>
+        </Value>
+        <Production>Кондитерская фабрика "Марс"</Production>
+    </Candy>
+</Candies>

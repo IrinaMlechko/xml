@@ -1,4 +1,4 @@
-//package by.mlechka.xml.entity;
+package by.mlechka.xml.entity;//package by.mlechka.xml.entity;
 //
 //public class Candy extends CandyBaseType {
 //

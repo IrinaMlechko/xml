@@ -1,7 +1,6 @@
 package by.mlechka.xml.handler;
 
 import by.mlechka.xml.common.CandyXmlTag;
-import by.mlechka.xml.common.ChocolateTypeEnum;
 import by.mlechka.xml.entity.Candy;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;

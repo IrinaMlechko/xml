@@ -1,7 +1,5 @@
 package by.mlechka.xml.entity;
 
-import by.mlechka.xml.common.ChocolateTypeEnum;
-
 import java.util.ArrayList;
 import java.util.List;
 

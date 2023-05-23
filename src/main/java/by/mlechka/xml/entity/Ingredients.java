@@ -1,4 +1,4 @@
-//package by.mlechka.xml.entity;
+package by.mlechka.xml.entity;//package by.mlechka.xml.entity;
 //
 //import by.mlechka.xml.common.ChocolateTypeEnum;
 //
