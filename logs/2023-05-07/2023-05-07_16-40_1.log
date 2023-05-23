@@ -1,0 +1,80 @@
+16:39:32.768 [main] INFO  by.mlechka.array.main.ArrayApplication - Maximum value in array: 5
+16:39:32.779 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Array after replacement: DataArray{id=3c5a7510-0241-428f-a725-bcff27eeb2b6, numbers=[5, 2, 3, 4, 5]}
+16:39:32.779 [main] INFO  by.mlechka.array.main.ArrayApplication - Array after replacement: DataArray{id=3c5a7510-0241-428f-a725-bcff27eeb2b6, numbers=[5, 2, 3, 4, 5]}
+16:39:32.780 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 3.8
+16:39:32.782 [main] INFO  by.mlechka.array.main.ArrayApplication - Average value in array: 3.8
+16:39:32.782 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 19
+16:39:32.783 [main] INFO  by.mlechka.array.main.ArrayApplication - Sum of values in array: 19
+16:39:32.784 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=9d507a58-4983-460b-8c5a-42bac984d513, numbers=[7, -1, 5, 8]}
+16:39:32.784 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+16:39:32.784 [main] INFO  by.mlechka.array.main.ArrayApplication - Minimum value in array: -1
+16:39:32.784 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 8
+16:39:32.784 [main] INFO  by.mlechka.array.main.ArrayApplication - Maximum value in array: 8
+16:39:32.785 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Array after replacement: DataArray{id=9d507a58-4983-460b-8c5a-42bac984d513, numbers=[7, 8, 5, 8]}
+16:39:32.785 [main] INFO  by.mlechka.array.main.ArrayApplication - Array after replacement: DataArray{id=9d507a58-4983-460b-8c5a-42bac984d513, numbers=[7, 8, 5, 8]}
+16:39:32.785 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 7.0
+16:39:32.785 [main] INFO  by.mlechka.array.main.ArrayApplication - Average value in array: 7.0
+16:39:32.786 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 28
+16:39:32.787 [main] INFO  by.mlechka.array.main.ArrayApplication - Sum of values in array: 28
+16:39:32.787 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=7289041d-dd69-484d-879f-9d9b2498a946, numbers=[8, 9, 45, 6]}
+16:39:32.787 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 6
+16:39:32.787 [main] INFO  by.mlechka.array.main.ArrayApplication - Minimum value in array: 6
+16:39:32.788 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 45
+16:39:32.788 [main] INFO  by.mlechka.array.main.ArrayApplication - Maximum value in array: 45
+16:39:32.789 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Array after replacement: DataArray{id=7289041d-dd69-484d-879f-9d9b2498a946, numbers=[8, 9, 45, 45]}
+16:39:32.789 [main] INFO  by.mlechka.array.main.ArrayApplication - Array after replacement: DataArray{id=7289041d-dd69-484d-879f-9d9b2498a946, numbers=[8, 9, 45, 45]}
+16:39:32.790 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 26.75
+16:39:32.790 [main] INFO  by.mlechka.array.main.ArrayApplication - Average value in array: 26.75
+16:39:32.790 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 107
+16:39:32.791 [main] INFO  by.mlechka.array.main.ArrayApplication - Sum of values in array: 107
+16:39:32.791 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=c8407812-e8a3-4425-a062-380d1bd4fb4c, numbers=[-1, 1]}
+16:39:32.791 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+16:39:32.791 [main] INFO  by.mlechka.array.main.ArrayApplication - Minimum value in array: -1
+16:39:32.791 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 1
+16:39:32.792 [main] INFO  by.mlechka.array.main.ArrayApplication - Maximum value in array: 1
+16:39:32.792 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Array after replacement: DataArray{id=c8407812-e8a3-4425-a062-380d1bd4fb4c, numbers=[1, 1]}
+16:39:32.792 [main] INFO  by.mlechka.array.main.ArrayApplication - Array after replacement: DataArray{id=c8407812-e8a3-4425-a062-380d1bd4fb4c, numbers=[1, 1]}
+16:39:32.792 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 1.0
+16:39:32.793 [main] INFO  by.mlechka.array.main.ArrayApplication - Average value in array: 1.0
+16:39:32.793 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 2
+16:39:32.793 [main] INFO  by.mlechka.array.main.ArrayApplication - Sum of values in array: 2
+16:39:32.793 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=3b42f5de-5588-4812-9f3e-3a893c08fc6a, numbers=[-1, -2]}
+16:39:32.794 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -2
+16:39:32.794 [main] INFO  by.mlechka.array.main.ArrayApplication - Minimum value in array: -2
+16:39:32.794 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: -1
+16:39:32.794 [main] INFO  by.mlechka.array.main.ArrayApplication - Maximum value in array: -1
+16:39:32.794 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Array after replacement: DataArray{id=3b42f5de-5588-4812-9f3e-3a893c08fc6a, numbers=[-1, -1]}
+16:39:32.795 [main] INFO  by.mlechka.array.main.ArrayApplication - Array after replacement: DataArray{id=3b42f5de-5588-4812-9f3e-3a893c08fc6a, numbers=[-1, -1]}
+16:39:32.795 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: -1.0
+16:39:32.796 [main] INFO  by.mlechka.array.main.ArrayApplication - Average value in array: -1.0
+16:39:32.796 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: -2
+16:39:32.796 [main] INFO  by.mlechka.array.main.ArrayApplication - Sum of values in array: -2
+16:40:26.260 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 1 2 3 4 5 contains only numbers and whitespaces and will be processed to an array with numbers
+16:40:26.266 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 7 -1 5 8 contains only numbers and whitespaces and will be processed to an array with numbers
+16:40:26.267 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String a z 4 do not contain only numbers and whitespaces and will be ignored
+16:40:26.268 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String 1 k 123 do not contain only numbers and whitespaces and will be ignored
+16:40:26.268 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 8 9 45 6 contains only numbers and whitespaces and will be processed to an array with numbers
+16:40:26.268 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String . do not contain only numbers and whitespaces and will be ignored
+16:40:26.270 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String - 1 do not contain only numbers and whitespaces and will be ignored
+16:40:26.270 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String 1 - do not contain only numbers and whitespaces and will be ignored
+16:40:26.270 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String - do not contain only numbers and whitespaces and will be ignored
+16:40:26.271 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String + do not contain only numbers and whitespaces and will be ignored
+16:40:26.271 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String -1 1 contains only numbers and whitespaces and will be processed to an array with numbers
+16:40:26.271 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String -1 -2 contains only numbers and whitespaces and will be processed to an array with numbers
+16:40:26.380 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=163bcd8f-0f0b-442c-be22-9f106ed50d53, numbers=[1, 2, 3, 4, 5]}
+16:40:26.381 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 1
+16:40:26.381 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 5
+16:40:26.381 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Array after replacement: DataArray{id=163bcd8f-0f0b-442c-be22-9f106ed50d53, numbers=[5, 2, 3, 4, 5]}
+16:40:26.382 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 3.8
+16:40:26.382 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 19
+16:40:26.383 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=933de70c-4442-411c-b54c-e2dde21d72df, numbers=[7, -1, 5, 8]}
+16:40:26.383 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+16:40:26.383 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 8
+16:40:26.383 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Array after replacement: DataArray{id=933de70c-4442-411c-b54c-e2dde21d72df, numbers=[7, 8, 5, 8]}
+16:40:26.384 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 7.0
+16:40:26.384 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 28
+16:40:26.384 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=1aa7f62f-9dfa-4031-b73a-70cb526ed09a, numbers=[8, 9, 45, 6]}
+16:40:26.384 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 6
+16:40:26.385 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 45
+16:40:26.385 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Array after replacement: DataArray{id=1aa7f62f-9dfa-4031-b73a-70cb526ed09a, numbers=[8, 9, 45, 45]}
+16:40:26.385 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 26.75

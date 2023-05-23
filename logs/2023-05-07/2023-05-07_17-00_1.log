@@ -1,0 +1,79 @@
+16:42:58.228 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=b7d5fc54-ba61-4b67-9f98-cea3a4a2d3ac, numbers=[-1, 1]}
+16:42:58.236 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+16:42:58.236 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 1
+16:42:58.237 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 0.0
+16:42:58.237 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 0
+16:42:58.237 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=bf0d603e-d2c6-4cd7-a550-67e247c9fe8e, numbers=[-1, -2]}
+16:42:58.241 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -2
+16:42:58.241 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: -1
+16:42:58.241 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: -1.5
+16:42:58.242 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: -3
+16:58:36.498 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 1 2 3 4 5 contains only numbers and whitespaces and will be processed to an array with numbers
+16:58:36.510 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 7 -1 5 8 contains only numbers and whitespaces and will be processed to an array with numbers
+16:58:36.511 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String a z 4 do not contain only numbers and whitespaces and will be ignored
+16:58:36.511 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String 1 k 123 do not contain only numbers and whitespaces and will be ignored
+16:58:36.512 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 8 9 45 6 contains only numbers and whitespaces and will be processed to an array with numbers
+16:58:36.512 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String . do not contain only numbers and whitespaces and will be ignored
+16:58:36.513 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String - 1 do not contain only numbers and whitespaces and will be ignored
+16:58:36.513 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String 1 - do not contain only numbers and whitespaces and will be ignored
+16:58:36.514 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String - do not contain only numbers and whitespaces and will be ignored
+16:58:36.514 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String + do not contain only numbers and whitespaces and will be ignored
+16:58:36.514 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String -1 1 contains only numbers and whitespaces and will be processed to an array with numbers
+16:58:36.515 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String -1 -2 contains only numbers and whitespaces and will be processed to an array with numbers
+16:58:36.625 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=8d64f64e-b77e-4733-9449-bc9c4aee6f6c, numbers=[1, 2, 3, 4, 5]}
+16:58:36.625 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 1
+16:58:36.625 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 5
+16:58:36.626 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 3.0
+16:58:36.627 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 15
+16:58:36.627 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=26c407d9-2d93-4289-a704-bd2ffd430273, numbers=[7, -1, 5, 8]}
+16:58:36.627 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+16:58:36.627 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 8
+16:58:36.628 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 4.75
+16:58:36.628 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 19
+16:58:36.628 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=22adb02b-31be-41a5-80ff-cbaed52c5ac7, numbers=[8, 9, 45, 6]}
+16:58:36.628 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 6
+16:58:36.629 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 45
+16:58:36.629 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 17.0
+16:58:36.629 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 68
+16:58:36.629 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=79a5013e-c3d6-454a-be01-af9cb76a124f, numbers=[-1, 1]}
+16:58:36.629 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+16:58:36.629 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 1
+16:58:36.630 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 0.0
+16:58:36.630 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 0
+16:58:36.630 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=444f9f99-c8bc-42cd-be51-b0333f1097a8, numbers=[-1, -2]}
+16:58:36.630 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -2
+16:58:36.630 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: -1
+16:58:36.631 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: -1.5
+16:58:36.631 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: -3
+17:00:43.907 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 1 2 3 4 5 contains only numbers and whitespaces and will be processed to an array with numbers
+17:00:43.914 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 7 -1 5 8 contains only numbers and whitespaces and will be processed to an array with numbers
+17:00:43.914 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String a z 4 do not contain only numbers and whitespaces and will be ignored
+17:00:43.915 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String 1 k 123 do not contain only numbers and whitespaces and will be ignored
+17:00:43.916 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 8 9 45 6 contains only numbers and whitespaces and will be processed to an array with numbers
+17:00:43.917 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String . do not contain only numbers and whitespaces and will be ignored
+17:00:43.918 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String - 1 do not contain only numbers and whitespaces and will be ignored
+17:00:43.918 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String 1 - do not contain only numbers and whitespaces and will be ignored
+17:00:43.918 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String - do not contain only numbers and whitespaces and will be ignored
+17:00:43.919 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String + do not contain only numbers and whitespaces and will be ignored
+17:00:43.919 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String -1 1 contains only numbers and whitespaces and will be processed to an array with numbers
+17:00:43.919 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String -1 -2 contains only numbers and whitespaces and will be processed to an array with numbers
+17:00:44.054 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 1
+17:00:44.055 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 5
+17:00:44.056 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 15
+17:00:44.057 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 3.0
+17:00:44.057 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of positive values in array: 5
+17:00:44.057 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of negative values in array: 0
+17:00:44.070 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+17:00:44.070 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 8
+17:00:44.070 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 19
+17:00:44.071 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 4.75
+17:00:44.071 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of positive values in array: 3
+17:00:44.072 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of negative values in array: 1
+17:00:44.074 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 6
+17:00:44.075 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 45
+17:00:44.075 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 68
+17:00:44.075 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 17.0
+17:00:44.075 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of positive values in array: 4
+17:00:44.076 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of negative values in array: 0
+17:00:44.077 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+17:00:44.077 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 1

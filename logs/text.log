@@ -1,8 +1,8 @@
-13:03:11.982 [main] ERROR by.mlechka.xml.CandyErrorHandler - 4 : 18 - cvc-attribute.3: Wert '1' des Attributs 'id' bei Element 'test' hat keinen gültigen Typ 'candyID'.
-13:03:11.999 [main] ERROR by.mlechka.xml.CandyErrorHandler - 35 : 12 - cvc-complex-type.2.4.b: Content des Elements 'test' ist nicht vollständig. '{shape}' wird erwartet.
-13:03:12.001 [main] ERROR by.mlechka.xml.CandyErrorHandler - 36 : 18 - cvc-datatype-valid.1.2.1: '2' ist kein gültiger Wert für 'NCName'.
-13:03:12.002 [main] ERROR by.mlechka.xml.CandyErrorHandler - 36 : 18 - cvc-attribute.3: Wert '2' des Attributs 'id' bei Element 'test' hat keinen gültigen Typ 'candyID'.
-13:03:12.004 [main] ERROR by.mlechka.xml.CandyErrorHandler - 67 : 12 - cvc-complex-type.2.4.b: Content des Elements 'test' ist nicht vollständig. '{shape}' wird erwartet.
-13:03:12.007 [main] ERROR by.mlechka.xml.CandyErrorHandler - 68 : 23 - cvc-datatype-valid.1.2.1: '3' ist kein gültiger Wert für 'NCName'.
-13:03:12.011 [main] ERROR by.mlechka.xml.CandyErrorHandler - 68 : 23 - cvc-attribute.3: Wert '3' des Attributs 'id' bei Element 'chocolate' hat keinen gültigen Typ 'candyID'.
-13:03:12.013 [main] ERROR by.mlechka.xml.CandyErrorHandler - 97 : 25 - cvc-complex-type.2.4.a: Ungültiger Content wurde beginnend mit Element 'chocolate-type' gefunden. '{variety, expiration-date}' wird erwartet.
+13:03:11.982 [main] ERROR by.mlechka.xml.handler.CandyErrorHandler - 4 : 18 - cvc-attribute.3: Wert '1' des Attributs 'id' bei Element 'test' hat keinen gültigen Typ 'candyID'.
+13:03:11.999 [main] ERROR by.mlechka.xml.handler.CandyErrorHandler - 35 : 12 - cvc-complex-type.2.4.b: Content des Elements 'test' ist nicht vollständig. '{shape}' wird erwartet.
+13:03:12.001 [main] ERROR by.mlechka.xml.handler.CandyErrorHandler - 36 : 18 - cvc-datatype-valid.1.2.1: '2' ist kein gültiger Wert für 'NCName'.
+13:03:12.002 [main] ERROR by.mlechka.xml.handler.CandyErrorHandler - 36 : 18 - cvc-attribute.3: Wert '2' des Attributs 'id' bei Element 'test' hat keinen gültigen Typ 'candyID'.
+13:03:12.004 [main] ERROR by.mlechka.xml.handler.CandyErrorHandler - 67 : 12 - cvc-complex-type.2.4.b: Content des Elements 'test' ist nicht vollständig. '{shape}' wird erwartet.
+13:03:12.007 [main] ERROR by.mlechka.xml.handler.CandyErrorHandler - 68 : 23 - cvc-datatype-valid.1.2.1: '3' ist kein gültiger Wert für 'NCName'.
+13:03:12.011 [main] ERROR by.mlechka.xml.handler.CandyErrorHandler - 68 : 23 - cvc-attribute.3: Wert '3' des Attributs 'id' bei Element 'chocolate' hat keinen gültigen Typ 'candyID'.
+13:03:12.013 [main] ERROR by.mlechka.xml.handler.CandyErrorHandler - 97 : 25 - cvc-complex-type.2.4.a: Ungültiger Content wurde beginnend mit Element 'chocolate-type' gefunden. '{variety, expiration-date}' wird erwartet.

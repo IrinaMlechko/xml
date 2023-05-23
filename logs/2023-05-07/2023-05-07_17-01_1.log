@@ -1,0 +1,83 @@
+17:00:44.077 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 0
+17:00:44.092 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 0.0
+17:00:44.092 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of positive values in array: 1
+17:00:44.092 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of negative values in array: 1
+17:00:44.097 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -2
+17:00:44.097 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: -1
+17:00:44.098 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: -3
+17:00:44.101 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: -1.5
+17:00:44.101 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of positive values in array: 0
+17:00:44.101 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of negative values in array: 2
+17:00:44.105 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=c3631b17-6b14-4920-8fd6-dd05668a23cd, numbers=[1, 2, 3, 4, 5]}
+17:00:44.106 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 1
+17:00:44.106 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 5
+17:00:44.106 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 3.0
+17:00:44.107 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 15
+17:00:44.107 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=0ab5cd0b-60a4-4a9e-afd5-a9cd588f04be, numbers=[7, -1, 5, 8]}
+17:00:44.107 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+17:00:44.108 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 8
+17:00:44.109 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 4.75
+17:00:44.109 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 19
+17:00:44.110 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=4d6ae17f-5949-4d28-88c5-f9186450656e, numbers=[8, 9, 45, 6]}
+17:00:44.110 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 6
+17:00:44.110 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 45
+17:00:44.111 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 17.0
+17:00:44.111 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 68
+17:00:44.111 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=660da612-d58c-42c2-ac84-937a93d63b63, numbers=[-1, 1]}
+17:00:44.113 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+17:00:44.113 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 1
+17:00:44.114 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 0.0
+17:00:44.114 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 0
+17:00:44.115 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=9cfb1f79-62d7-4ab8-8a6a-23fb7ed4b2f0, numbers=[-1, -2]}
+17:00:44.116 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -2
+17:00:44.117 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: -1
+17:00:44.118 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: -1.5
+17:00:44.118 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: -3
+17:01:30.036 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 1 2 3 4 5 contains only numbers and whitespaces and will be processed to an array with numbers
+17:01:30.043 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 7 -1 5 8 contains only numbers and whitespaces and will be processed to an array with numbers
+17:01:30.043 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String a z 4 do not contain only numbers and whitespaces and will be ignored
+17:01:30.044 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String 1 k 123 do not contain only numbers and whitespaces and will be ignored
+17:01:30.044 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String 8 9 45 6 contains only numbers and whitespaces and will be processed to an array with numbers
+17:01:30.045 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String . do not contain only numbers and whitespaces and will be ignored
+17:01:30.046 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String - 1 do not contain only numbers and whitespaces and will be ignored
+17:01:30.046 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String 1 - do not contain only numbers and whitespaces and will be ignored
+17:01:30.046 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String - do not contain only numbers and whitespaces and will be ignored
+17:01:30.047 [main] INFO  mlechka.array.validator.impl.ArrayValidatorImpl - String + do not contain only numbers and whitespaces and will be ignored
+17:01:30.047 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String -1 1 contains only numbers and whitespaces and will be processed to an array with numbers
+17:01:30.048 [main] DEBUG mlechka.array.validator.impl.ArrayValidatorImpl - String -1 -2 contains only numbers and whitespaces and will be processed to an array with numbers
+17:01:30.180 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 1
+17:01:30.180 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 5
+17:01:30.180 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 15
+17:01:30.181 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 3.0
+17:01:30.181 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of positive values in array: 5
+17:01:30.182 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of negative values in array: 0
+17:01:30.185 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+17:01:30.185 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 8
+17:01:30.185 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 19
+17:01:30.186 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 4.75
+17:01:30.186 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of positive values in array: 3
+17:01:30.186 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of negative values in array: 1
+17:01:30.187 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 6
+17:01:30.187 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 45
+17:01:30.187 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 68
+17:01:30.188 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 17.0
+17:01:30.188 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of positive values in array: 4
+17:01:30.188 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of negative values in array: 0
+17:01:30.189 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -1
+17:01:30.189 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 1
+17:01:30.190 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 0
+17:01:30.190 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 0.0
+17:01:30.190 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of positive values in array: 1
+17:01:30.190 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of negative values in array: 1
+17:01:30.191 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: -2
+17:01:30.191 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: -1
+17:01:30.192 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: -3
+17:01:30.192 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: -1.5
+17:01:30.193 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of positive values in array: 0
+17:01:30.193 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Number of negative values in array: 2
+17:01:30.195 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=7f465864-ad2e-402f-a167-87bb90735356, numbers=[1, 2, 3, 4, 5]}
+17:01:30.195 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Minimal value in array: 1
+17:01:30.196 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Maximum value in array: 5
+17:01:30.196 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Average value in array: 3.0
+17:01:30.196 [main] INFO  mlechka.array.service.impl.ArithmeticArrayServiceImpl - Sum of values in array: 15
+17:01:30.197 [main] INFO  by.mlechka.array.main.ArrayApplication - Original array: DataArray{id=9f59d814-ea5a-47f7-bbba-b1d2251e0589, numbers=[7, -1, 5, 8]}
