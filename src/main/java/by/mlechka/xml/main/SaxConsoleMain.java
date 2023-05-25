@@ -16,7 +16,7 @@ public class SaxConsoleMain {
             XMLReader reader = parser.getXMLReader();
             reader.setContentHandler(new ConsoleCandyHandler());
 //            reader.setErrorHandler(new CandyErrorHandler());
-            reader.parse("src/main/resources/xml/candies.xml");
+            reader.parse("src/main/resources/xml/sweets.xml");
         } catch (SAXException | IOException | ParserConfigurationException e) {
             e.printStackTrace();
         }
