@@ -1,7 +1,7 @@
 package by.mlechka.xml.handler;
 
-import by.mlechka.xml.common.CandyXmlTag;
 import by.mlechka.xml.entity.Candy;
+import common.CandyXmlTag;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
