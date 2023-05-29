@@ -25,6 +25,7 @@
             <xsd:element name="expiration-date" type="xsd:dateTime"/>
         </xsd:sequence>
         <xsd:attribute name="id" type="sweetID" use="required"/>
+        <xsd:attribute name="vegan" type="xsd:boolean" use="optional"/>
     </xsd:complexType>
 
     <xsd:complexType name="chocolateType">
@@ -42,7 +43,7 @@
         <xsd:complexContent>
             <xsd:extension base="sweetType">
                 <xsd:sequence>
-                    <xsd:element name="shape" type="shapeType"/>
+                    <xsd:element name="variety" type="varietyType"/>
                 </xsd:sequence>
             </xsd:extension>
         </xsd:complexContent>
@@ -53,7 +54,6 @@
             <xsd:enumeration value="caramel"/>
             <xsd:enumeration value="drops"/>
             <xsd:enumeration value="toffee"/>
-            <xsd:enumeration value="chocolate"/>
             <xsd:enumeration value="chocolate_filled"/>
         </xsd:restriction>
     </xsd:simpleType>

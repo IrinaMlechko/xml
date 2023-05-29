@@ -1,6 +1,6 @@
 package by.mlechka.xml.common;
 
-public enum ChocolateTypeEnum {
+public enum ChocolateVariety {
     WHITE,
     DARK,
     MILK;

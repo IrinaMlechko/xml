@@ -8,6 +8,9 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import by.mlechka.xml.entity.Candy;
+import by.mlechka.xml.entity.Candy1;
+import by.mlechka.xml.entity.Chocolate;
+import by.mlechka.xml.entity.Sweet;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -15,10 +18,14 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class CandiesDomBuilder {
-    private Set<Candy> candies;
+
+    private Set<Candy1> candies;
+    private Set<Chocolate> chocolate;
     private DocumentBuilder docBuilder;
+
     public CandiesDomBuilder() {
-        candies = new HashSet<Candy>();
+        candies = new HashSet<Candy1>();
+        chocolate = new HashSet<Chocolate>();
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
@@ -27,7 +34,7 @@ public class CandiesDomBuilder {
             e.printStackTrace(); // log
         }
     }
-    public Set<Candy> getCandies() {
+    public Set<Candy1> getCandies() {
         return candies;
     }
     public void buildSetCandies(String filename) {
@@ -39,15 +46,15 @@ public class CandiesDomBuilder {
             NodeList candiesList = root.getElementsByTagName("candy");
             for (int i = 0; i < candiesList.getLength(); i++) {
                 Element candyElement = (Element) candiesList.item(i);
-                Candy candy = buildCandy(candyElement);
+                Candy1 candy = buildCandy(candyElement);
                 candies.add(candy);
             }
         } catch (IOException | SAXException e) {
             e.printStackTrace(); // log
         }
     }
-    private Candy buildCandy(Element candyElement) {
-        Candy candy = new Candy();
+    private Candy1 buildCandy(Element candyElement) {
+        Candy1 candy = new Candy1();
 // add null check
 
         candy.setId(candyElement.getAttribute("id"));

@@ -31,7 +31,7 @@
         </value>
         <manufacturer>Toffee man</manufacturer>
         <expiration-date>2023-05-22T00:00:00</expiration-date>
-        <shape>square</shape>
+        <variety>toffee</variety>
     </candy>
     <candy id="A55">
         <name>string</name>
@@ -63,7 +63,7 @@
         </value>
         <manufacturer>string</manufacturer>
         <expiration-date>2023-05-22T00:00:00</expiration-date>
-        <shape>square</shape>
+        <variety>caramel</variety>
     </candy>
     <candy id="A3">
         <name>string</name>
@@ -95,7 +95,7 @@
         </value>
         <manufacturer>string</manufacturer>
         <expiration-date>2023-05-22T00:00:00</expiration-date>
-        <shape>square</shape>
+        <variety>drops</variety>
     </candy>
     <candy id="AAAAD">
         <name>string</name>
@@ -127,9 +127,9 @@
         </value>
         <manufacturer>string</manufacturer>
         <expiration-date>2023-05-22T00:00:00</expiration-date>
-        <shape>square</shape>
+        <variety>chocolate_filled</variety>
     </candy>
-    <candy id="A1">
+    <candy id="A1" vegan="true">
         <name>string</name>
         <energy>
             <energyAmount>300</energyAmount>
@@ -159,7 +159,7 @@
         </value>
         <manufacturer>string</manufacturer>
         <expiration-date>2023-05-22T00:00:00</expiration-date>
-        <shape>square</shape>
+        <variety>chocolate_filled</variety>
     </candy>
     <chocolate id="B5">
         <name>Ritter Sport</name>
