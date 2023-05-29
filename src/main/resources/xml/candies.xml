@@ -34,7 +34,7 @@
         <expirationDate>2024-05-22T00:00:00</expirationDate>
     </candy>
     <candy id="A2">
-        <name>string</name>
+        <name>Marshmallow Dream</name>
         <energy>
             <energyAmount>328</energyAmount>
             <energyUnit></energyUnit>
@@ -61,12 +61,12 @@
             <fat>272</fat>
             <carbohydrates>4094</carbohydrates>
         </value>
-        <manufacturer>string</manufacturer>
+        <manufacturer> Sweet Treats Co.</manufacturer>
         <variety>toffee</variety>
         <expirationDate>2024-05-22T00:00:00</expirationDate>
     </candy>
     <candy id="A3">
-        <name>string</name>
+        <name>Choco Crunch</name>
         <energy>
             <energyAmount>400</energyAmount>
             <energyUnit></energyUnit>
@@ -93,12 +93,12 @@
             <fat>2080</fat>
             <carbohydrates>1852</carbohydrates>
         </value>
-        <manufacturer>string</manufacturer>
+        <manufacturer>Chocolate Delights Inc.</manufacturer>
         <variety>chocolate</variety>
         <expirationDate>2024-05-22T00:00:00</expirationDate>
     </candy>
     <candy id="A4">
-        <name>string</name>
+        <name>Candylicious Delight</name>
         <energy>
             <energyAmount>500</energyAmount>
             <energyUnit></energyUnit>
@@ -125,12 +125,12 @@
             <fat>1740</fat>
             <carbohydrates>2068</carbohydrates>
         </value>
-        <manufacturer>string</manufacturer>
+        <manufacturer> Sugar Rush Corp.</manufacturer>
         <variety>chocolate</variety>
         <expirationDate>2024-05-22T00:00:00</expirationDate>
     </candy>
     <candy id="A5">
-        <name>string</name>
+        <name>Strawberry Bliss</name>
         <energy>
             <energyAmount>300</energyAmount>
             <energyUnit></energyUnit>
@@ -157,8 +157,360 @@
             <fat>966</fat>
             <carbohydrates>2846</carbohydrates>
         </value>
-        <manufacturer>string</manufacturer>
+        <manufacturer>Berry Sweets Ltd.</manufacturer>
         <variety>drops</variety>
+        <expirationDate>2024-05-22T00:00:00</expirationDate>
+    </candy>
+    <candy id="A6">
+        <name>Caramel Swirl</name>
+        <energy>
+            <energyAmount>328</energyAmount>
+            <energyUnit></energyUnit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredientName>water</ingredientName>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>sugar</ingredientName>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>flour</ingredientName>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>272</fat>
+            <carbohydrates>4094</carbohydrates>
+        </value>
+        <manufacturer>Gooey Goodies LLC</manufacturer>
+        <variety>toffee</variety>
+        <expirationDate>2024-05-22T00:00:00</expirationDate>
+    </candy>
+    <candy id="A7">
+        <name>Nutty Delight</name>
+        <energy>
+            <energyAmount>328</energyAmount>
+            <energyUnit></energyUnit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredientName>water</ingredientName>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>sugar</ingredientName>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>flour</ingredientName>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>272</fat>
+            <carbohydrates>4094</carbohydrates>
+        </value>
+        <manufacturer>Nuts 'n' More Confections</manufacturer>
+        <variety>toffee</variety>
+        <expirationDate>2024-05-22T00:00:00</expirationDate>
+    </candy>
+    <candy id="A8">
+        <name>Rainbow Drops</name>
+        <energy>
+            <energyAmount>328</energyAmount>
+            <energyUnit></energyUnit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredientName>water</ingredientName>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>sugar</ingredientName>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>flour</ingredientName>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>272</fat>
+            <carbohydrates>4094</carbohydrates>
+        </value>
+        <manufacturer>Colorful Candy Creations</manufacturer>
+        <variety>toffee</variety>
+        <expirationDate>2024-05-22T00:00:00</expirationDate>
+    </candy>
+    <candy id="A9">
+        <name>Vanilla Bean Dream</name>
+        <energy>
+            <energyAmount>328</energyAmount>
+            <energyUnit></energyUnit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredientName>water</ingredientName>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>sugar</ingredientName>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>flour</ingredientName>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>272</fat>
+            <carbohydrates>4094</carbohydrates>
+        </value>
+        <manufacturer>Creamy Confections Ltd.</manufacturer>
+        <variety>toffee</variety>
+        <expirationDate>2024-05-22T00:00:00</expirationDate>
+    </candy>
+    <candy id="A10">
+        <name>Crunchy Caramel Corn</name>
+        <energy>
+            <energyAmount>328</energyAmount>
+            <energyUnit></energyUnit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredientName>water</ingredientName>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>sugar</ingredientName>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>flour</ingredientName>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>272</fat>
+            <carbohydrates>4094</carbohydrates>
+        </value>
+        <manufacturer>Snacktime Snacks Inc.</manufacturer>
+        <variety>toffee</variety>
+        <expirationDate>2024-05-22T00:00:00</expirationDate>
+    </candy>
+    <candy id="A11">
+        <name>Minty Fresh Bites</name>
+        <energy>
+            <energyAmount>328</energyAmount>
+            <energyUnit></energyUnit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredientName>water</ingredientName>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>sugar</ingredientName>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>flour</ingredientName>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>272</fat>
+            <carbohydrates>4094</carbohydrates>
+        </value>
+        <manufacturer> Fresh Breath Confections</manufacturer>
+        <variety>toffee</variety>
+        <expirationDate>2024-05-22T00:00:00</expirationDate>
+    </candy>
+    <candy id="A12">
+        <name>Jelly Bean Bonanza</name>
+        <energy>
+            <energyAmount>328</energyAmount>
+            <energyUnit></energyUnit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredientName>water</ingredientName>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>sugar</ingredientName>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>flour</ingredientName>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>272</fat>
+            <carbohydrates>4094</carbohydrates>
+        </value>
+        <manufacturer> Jelly Joy Treats</manufacturer>
+        <variety>toffee</variety>
+        <expirationDate>2024-05-22T00:00:00</expirationDate>
+    </candy>
+    <candy id="A13">
+        <name>Cookies and Cream Heaven</name>
+        <energy>
+            <energyAmount>328</energyAmount>
+            <energyUnit></energyUnit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredientName>water</ingredientName>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>sugar</ingredientName>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>flour</ingredientName>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>272</fat>
+            <carbohydrates>4094</carbohydrates>
+        </value>
+        <manufacturer>Creamy Crunch Inc.</manufacturer>
+        <variety>toffee</variety>
+        <expirationDate>2024-05-22T00:00:00</expirationDate>
+    </candy>
+    <candy id="A14">
+        <name>Peanut Butter Paradise</name>
+        <energy>
+            <energyAmount>328</energyAmount>
+            <energyUnit></energyUnit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredientName>water</ingredientName>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>sugar</ingredientName>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>flour</ingredientName>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>272</fat>
+            <carbohydrates>4094</carbohydrates>
+        </value>
+        <manufacturer>Nutty Nibbles Co.</manufacturer>
+        <variety>toffee</variety>
+        <expirationDate>2024-05-22T00:00:00</expirationDate>
+    </candy>
+    <candy id="A15">
+        <name>Tropical Tango</name>
+        <energy>
+            <energyAmount>328</energyAmount>
+            <energyUnit></energyUnit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredientName>water</ingredientName>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>sugar</ingredientName>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>flour</ingredientName>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>272</fat>
+            <carbohydrates>4094</carbohydrates>
+        </value>
+        <manufacturer> Exotic Fruits Delight</manufacturer>
+        <variety>toffee</variety>
+        <expirationDate>2024-05-22T00:00:00</expirationDate>
+    </candy>
+    <candy id="A16">
+        <name>Double Chocolate Extravaganza</name>
+        <energy>
+            <energyAmount>328</energyAmount>
+            <energyUnit></energyUnit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredientName>water</ingredientName>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>sugar</ingredientName>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredientName>flour</ingredientName>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>4372</protein>
+            <fat>272</fat>
+            <carbohydrates>4094</carbohydrates>
+        </value>
+        <manufacturer> Chocoholic Delights Ltd.</manufacturer>
+        <variety>toffee</variety>
         <expirationDate>2024-05-22T00:00:00</expirationDate>
     </candy>
 </candies>
