@@ -1,4 +1,4 @@
-package common;
+package by.mlechka.xml.type;
 
 public enum CandyXmlTag {
 

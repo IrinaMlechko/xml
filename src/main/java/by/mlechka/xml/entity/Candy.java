@@ -120,25 +120,6 @@ public class Candy {
         this.expirationDate = expirationDate;
     }
 
-//    public static class Ingredients {
-//
-//        private List<IngredientType> ingredients = new ArrayList<>();
-//
-//        public List<IngredientType> getIngredients() {
-//            return ingredients;
-//        }
-//
-//        public void setIngredients(List<IngredientType> ingredients) {
-//            this.ingredients = ingredients;
-//        }
-//
-//        public void add(int index, IngredientType element) {
-//            ingredients.add(index, element);
-//        }
-//
-//
-//    }
-
     public static class IngredientType {
         private String name;
         private int amount;

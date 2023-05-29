@@ -1,11 +1,10 @@
 package by.mlechka.xml.handler;
 
 import by.mlechka.xml.entity.Candy;
-import common.CandyXmlTag;
+import by.mlechka.xml.type.CandyXmlTag;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.EnumSet;

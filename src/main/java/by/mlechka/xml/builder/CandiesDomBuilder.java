@@ -1,6 +1,8 @@
 package by.mlechka.xml.builder;
 
 import by.mlechka.xml.entity.Candy;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -20,6 +22,8 @@ import java.util.Set;
 public class CandiesDomBuilder {
     private Set<Candy> candies;
     private DocumentBuilder docBuilder;
+    static Logger logger = LogManager.getLogger(CandiesDomBuilder.class);
+
     public CandiesDomBuilder() {
         candies = new HashSet<Candy>();
 
@@ -27,7 +31,7 @@ public class CandiesDomBuilder {
         try {
             docBuilder = factory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
-            e.printStackTrace();
+            logger.error("error by creating doc builder");
         }
     }
     public Set<Candy> getCandies() {
@@ -36,6 +40,7 @@ public class CandiesDomBuilder {
     public void buildSetCandies(String filename) {
         Document doc;
         try {
+//add null check
             doc = docBuilder.parse(filename);
             Element root = doc.getDocumentElement();
             NodeList candiesList = root.getElementsByTagName("candy");
