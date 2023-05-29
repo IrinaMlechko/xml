@@ -14,17 +14,14 @@ import java.io.IOException;
 public class BaseValidatorMain {
     public static void main(String[] args) {
         String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
-        String fileName = "src/main/resources/xml/candies4.xml";
-        String schemaName = "src/main/resources/xml/candies4.xsd";
+        String fileName = "src/main/resources/xml/candies.xml";
+        String schemaName = "src/main/resources/xml/candies.xsd";
         SchemaFactory factory = SchemaFactory.newInstance(language);
         File schemaLocation = new File(schemaName);
         try {
-// schema creation
             Schema schema = factory.newSchema(schemaLocation);
-// creating a schema-based validator
             Validator validator = schema.newValidator();
             Source source = new StreamSource(fileName);
-// document check
             validator.setErrorHandler(new CandyErrorHandler());
             validator.validate(source);
         } catch (SAXException | IOException e) {

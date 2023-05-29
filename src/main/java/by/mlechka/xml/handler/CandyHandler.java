@@ -5,6 +5,8 @@ import common.CandyXmlTag;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.HashSet;
@@ -19,7 +21,7 @@ public class CandyHandler extends DefaultHandler {
 
     public CandyHandler() {
         candies = new HashSet<Candy>();
-        withText = EnumSet.range(CandyXmlTag.NAME, CandyXmlTag.VARIETY);
+        withText = EnumSet.range(CandyXmlTag.NAME, CandyXmlTag.EXPIRATIONDATE);
     }
     public Set<Candy> getCandies() {
         return candies;
@@ -28,6 +30,7 @@ public class CandyHandler extends DefaultHandler {
         if (ELEMENT_CANDY.equals(qName)) {
             current = new Candy();
             current.setId(attrs.getValue(0));
+            current.setVegan(Boolean.valueOf(attrs.getValue(1)));
         } else {
             CandyXmlTag temp = CandyXmlTag.valueOf(qName.toUpperCase());
             if (withText.contains(temp)) {
@@ -60,6 +63,7 @@ public class CandyHandler extends DefaultHandler {
                 case CARBOHYDRATES -> current.getValue().setCarbohydrates(Integer.parseInt(data));
                 case MANUFACTURER -> current.setManufacturer(data);
                 case VARIETY -> current.setVariety(data);
+                case EXPIRATIONDATE -> current.setExpirationDate(LocalDateTime.parse(data));
                 default -> throw new EnumConstantNotPresentException(
                         currentXmlTag.getDeclaringClass(), currentXmlTag.name());
             }

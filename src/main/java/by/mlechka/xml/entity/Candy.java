@@ -1,45 +1,63 @@
 package by.mlechka.xml.entity;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Candy {
 
     private String id;
+    private Boolean vegan;
     private String name;
     private Energy energy;
-//    private IngredientType ingredientType = new IngredientType();
     private List<IngredientType> ingredients = new ArrayList<>();
     private Value value = new Value();
     private String manufacturer;
     private String variety;
+    private LocalDateTime expirationDate;
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("\nId:");
-        sb.append(id).append("\nName: ").append(name);
-        sb.append("\nEnergy: ").append(energy);
-        sb.append("\nIngredients: ").append(ingredients);
-        sb.append("\nManufacturer: ").append(manufacturer);
-        sb.append("\nVariety: ").append(variety).append('\n');
+        final StringBuilder sb = new StringBuilder("\n Candy{");
+        sb.append("\n\t id='").append(id).append('\'');
+        sb.append(", \n\t vegan='").append(vegan).append('\'');
+        sb.append(", \n\t name='").append(name).append('\'');
+        sb.append(", \n\t energy=").append(energy);
+        sb.append(", \n\t ingredients=").append(ingredients);
+        sb.append(", ").append(value);
+        sb.append(", \n\t manufacturer='").append(manufacturer).append('\'');
+        sb.append(", \n\t variety='").append(variety).append('\'');
+        sb.append(", \n\t expirationDate=").append(expirationDate);
+        sb.append('}');
         return sb.toString();
     }
 
     public Candy() {
     }
 
-    public Candy(String id, String name, Energy energy, List<IngredientType> ingredients, Value value, String manufacturer, String variety) {
+    public Candy(String id, Boolean vegan, String name, Energy energy, List<IngredientType> ingredients, Value value, String manufacturer, String variety, LocalDateTime expirationDate) {
         this.id = id;
+        this.vegan = vegan;
         this.name = name;
         this.energy = energy;
         this.ingredients = ingredients;
         this.value = value;
         this.manufacturer = manufacturer;
         this.variety = variety;
+        this.expirationDate = expirationDate;
     }
 
     public String getId() {
         return id;
+    }
+
+    public Boolean getVegan() {
+        return vegan;
+    }
+
+    public void setVegan(Boolean vegan) {
+        this.vegan = vegan;
     }
 
     public void setId(String id) {
@@ -94,19 +112,32 @@ public class Candy {
         this.variety = variety;
     }
 
-
-    public static class Ingredients {
-
-        private List<IngredientType> ingredients = new ArrayList<>();
-
-        public List<IngredientType> getIngredients() {
-            return ingredients;
-        }
-
-        public void setIngredients(List<IngredientType> ingredients) {
-            this.ingredients = ingredients;
-        }
+    public LocalDateTime getExpirationDate() {
+        return expirationDate;
     }
+
+    public void setExpirationDate(LocalDateTime expirationDate) {
+        this.expirationDate = expirationDate;
+    }
+
+//    public static class Ingredients {
+//
+//        private List<IngredientType> ingredients = new ArrayList<>();
+//
+//        public List<IngredientType> getIngredients() {
+//            return ingredients;
+//        }
+//
+//        public void setIngredients(List<IngredientType> ingredients) {
+//            this.ingredients = ingredients;
+//        }
+//
+//        public void add(int index, IngredientType element) {
+//            ingredients.add(index, element);
+//        }
+//
+//
+//    }
 
     public static class IngredientType {
         private String name;
@@ -125,7 +156,7 @@ public class Candy {
         @Override
         public String toString() {
             final StringBuilder sb = new StringBuilder("\n\t");
-            sb.append(name).append(" - ").append(amount).append(" ").append(unit);
+            sb.append("\t").append(name).append(" - ").append(amount).append(" ").append(unit);
             return sb.toString();
         }
 
@@ -162,9 +193,9 @@ public class Candy {
 
         @Override
         public String toString() {
-            final StringBuilder sb = new StringBuilder("\nValue:\n\tProtein:");
-            sb.append(protein).append("\n\tFat: ").append(fat);
-            sb.append("\n\tCarbohydrates: ").append(carbohydrates).append('\n');
+            final StringBuilder sb = new StringBuilder("\n\t value:\n\t\t protein:");
+            sb.append(protein).append("\n\t\t fat: ").append(fat);
+            sb.append("\n\t\t carbohydrates: ").append(carbohydrates).append('\n');
             return sb.toString();
         }
 
@@ -210,7 +241,7 @@ public class Candy {
 
         @Override
         public String toString() {
-            final StringBuilder sb = new StringBuilder("\n\t");
+            final StringBuilder sb = new StringBuilder("");
             sb.append(amount).append(" ").append(unit);
             return sb.toString();
         }

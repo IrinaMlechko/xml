@@ -16,14 +16,15 @@ public enum CandyXmlTag {
     VANILLA("vanilla"),
     INGREDIENTS("ingredients"),
     INGREDIENT ("ingredient"),
-    INGREDIENTNAME ("ingredientName"),
+    INGREDIENTNAME("ingredientName"),
     AMOUNT ("amount"),
     UNIT ("unit"),
     PROTEIN("protein"),
     FAT("fat"),
     CARBOHYDRATES("carbohydrates"),
     MANUFACTURER("manufacturer"),
-    VARIETY("variety")
+    VARIETY("variety"),
+    EXPIRATIONDATE("expirationDate")
     ;
 
     private String value;
