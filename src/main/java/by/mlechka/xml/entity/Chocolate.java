@@ -1,7 +1,7 @@
 package by.mlechka.xml.entity;
 
-import by.mlechka.xml.common.ChocolateVariety;
-import by.mlechka.xml.common.Shape;
+import by.mlechka.xml.type.ChocolateVariety;
+import by.mlechka.xml.type.Shape;
 
 import java.time.LocalDateTime;
 import java.util.List;

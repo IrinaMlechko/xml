@@ -1,9 +1,10 @@
 package by.mlechka.xml.builder;
 
-import by.mlechka.xml.common.CandyXmlTag;
-import by.mlechka.xml.common.ChocolateVariety;
-import by.mlechka.xml.common.Shape;
+import by.mlechka.xml.type.CandyXmlTag;
+import by.mlechka.xml.type.ChocolateVariety;
+import by.mlechka.xml.type.Shape;
 import by.mlechka.xml.entity.*;
+import by.mlechka.xml.type.Variety;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
@@ -22,15 +23,15 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class CandiesDomBuilder {
+public class SweetsDomBuilder {
     private Set<Sweet> sweets;
     private DocumentBuilder docBuilder;
-    static Logger logger = LogManager.getLogger(CandiesDomBuilder.class);
+    static Logger logger = LogManager.getLogger(SweetsDomBuilder.class);
     public static final String XML_ATTRIBUTE_ID = "id";
     public static final String XML_ATTRIBUTE_VEGAN = "vegan";
     public static final String DEFAULT_ENERGY_UNIT = "kcal" ;
 
-    public CandiesDomBuilder() {
+    public SweetsDomBuilder() {
         sweets = new HashSet<>();
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -78,7 +79,7 @@ public class CandiesDomBuilder {
     private Candy buildCandy(Element sweetElement){
         Candy candy = new Candy();
         candy = (Candy) buildSweet(candy, sweetElement);
-        candy.setVariety(getElementTextContent(sweetElement, CandyXmlTag.VARIETY.getValue()));
+        candy.setVariety(Variety.valueOf(getElementTextContent(sweetElement, CandyXmlTag.VARIETY.getValue()).toUpperCase()));
         return candy;
     }
 

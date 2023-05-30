@@ -1,7 +1,5 @@
 package by.mlechka.xml.main;
 
-import by.mlechka.xml.builder.CandiesDomBuilder;
-
 //public class Main {
 //    public static void main(String[] args) {
 ////    CandiesSaxBuilder saxBuilder = new CandiesSaxBuilder();

@@ -1,22 +1,22 @@
-package by.mlechka.xml.common;
+package by.mlechka.xml.type;
 
-public enum CandyXmlTag {
+public enum SweetXmlTag {
 
-    SWEETS("sweets"),
+    CANDIES("candies"),
     CANDY("candy"),
     CHOCOLATE("chocolate"),
     VALUE("value"),
     NAME("name"),
     ENERGY("energy"),
-    ENERGY_AMOUNT("energy-amount"),
-    ENERGY_UNIT("energy-unit"),
+    ENERGY_AMOUNT("energyAmount"),
+    ENERGY_UNIT("energyUnit"),
     WATER("water"),
     SUGAR("sugar"),
     FRUCTOSE("fructose"),
     VANILLA("vanilla"),
     INGREDIENTS("ingredients"),
     INGREDIENT ("ingredient"),
-    INGREDIENT_NAME ("ingredient-name"),
+    INGREDIENTNAME ("ingredientName"),
     AMOUNT ("amount"),
     UNIT ("unit"),
     PROTEIN("protein"),
@@ -24,14 +24,12 @@ public enum CandyXmlTag {
     CARBOHYDRATES("carbohydrates"),
     MANUFACTURER("manufacturer"),
     VARIETY("variety"),
-    SHAPE("shape"),
-    EXPIRATION_DATE("expiration-date"),
-    CHOCOLATE_TYPE("chocolate-type")
+    EXPIRATION_DATE("expiration-date")
     ;
 
     private String value;
 
-    CandyXmlTag(String value) {
+    SweetXmlTag(String value) {
         this.value = value;
     }
     public String getValue() {

@@ -15,7 +15,7 @@ public class Energy {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("\n\t");
+        final StringBuilder sb = new StringBuilder("");
         sb.append(amount).append(" ").append(unit);
         return sb.toString();
     }

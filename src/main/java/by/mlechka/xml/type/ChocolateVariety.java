@@ -1,4 +1,4 @@
-package by.mlechka.xml.common;
+package by.mlechka.xml.type;
 
 public enum ChocolateVariety {
     WHITE,

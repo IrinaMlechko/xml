@@ -8,9 +8,9 @@ package by.mlechka.xml.entity;
 
         @Override
         public String toString() {
-            final StringBuilder sb = new StringBuilder("\nValue:\n\tProtein:");
-            sb.append(protein).append("\n\tFat: ").append(fat);
-            sb.append("\n\tCarbohydrates: ").append(carbohydrates).append('\n');
+            final StringBuilder sb = new StringBuilder("\n\t value:\n\t\t protein:");
+            sb.append(protein).append("\n\t\t fat: ").append(fat);
+            sb.append("\n\t\t carbohydrates: ").append(carbohydrates).append('\n');
             return sb.toString();
         }
 
