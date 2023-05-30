@@ -66,7 +66,7 @@
 
     <xsd:complexType name="ingredientType">
         <xsd:sequence>
-            <xsd:element name="ingredientName" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="ingredient-name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
             <xsd:element name="amount" type="xsd:positiveInteger" minOccurs="1" maxOccurs="1"/>
             <xsd:element name="unit" type="xsd:string" minOccurs="1" maxOccurs="1"/>
         </xsd:sequence>
@@ -90,8 +90,8 @@
 
     <xsd:complexType name="energyType">
         <xsd:sequence>
-            <xsd:element name="energyAmount" type="xsd:nonNegativeInteger"/>
-            <xsd:element name="energyUnit" type="xsd:string" default="kcal"/>
+            <xsd:element name="energy-amount" type="xsd:nonNegativeInteger"/>
+            <xsd:element name="energy-unit" type="xsd:string" default="kcal"/>
         </xsd:sequence>
     </xsd:complexType>
 

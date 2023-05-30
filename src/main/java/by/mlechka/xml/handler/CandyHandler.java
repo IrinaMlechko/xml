@@ -29,7 +29,7 @@ public class CandyHandler extends DefaultHandler {
             current = new Candy();
             current.setId(attrs.getValue(0));
         } else {
-            CandyXmlTag temp = CandyXmlTag.valueOf(qName.toUpperCase());
+            CandyXmlTag temp = CandyXmlTag.valueOf(qName.toUpperCase().replace("-","_"));
             if (withText.contains(temp)) {
                 currentXmlTag = temp;
             }
@@ -47,12 +47,12 @@ public class CandyHandler extends DefaultHandler {
                 case NAME -> current.setName(data);
                 //TODO: why does it not work like Value?
                 case ENERGY -> current.setEnergy(new Candy.Energy());
-                case ENERGYAMOUNT -> current.getEnergy().setAmount(Integer.parseInt(data));
+                case ENERGY_AMOUNT -> current.getEnergy().setAmount(Integer.parseInt(data));
                 //TODO: how to work with default value if tag present in xml?
-                case ENERGYUNIT -> current.getEnergy().setUnit(data != "" ? data : "kcal");
+                case ENERGY_UNIT -> current.getEnergy().setUnit(data != "" ? data : "kcal");
                 case INGREDIENTS -> current.setIngredients(new ArrayList<>());
                 case INGREDIENT -> current.getIngredients().add(new Candy.IngredientType());
-                case INGREDIENTNAME -> current.getIngredients().get(current.getIngredients().size()-1).setName(data);
+                case INGREDIENT_NAME -> current.getIngredients().get(current.getIngredients().size()-1).setName(data);
                 case AMOUNT -> current.getIngredients().get(current.getIngredients().size()-1).setAmount(Integer.parseInt(data));
                 case UNIT -> current.getIngredients().get(current.getIngredients().size()-1).setUnit(data);
                 case PROTEIN -> current.getValue().setProtein(Integer.parseInt(data));

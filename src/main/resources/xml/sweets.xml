@@ -4,22 +4,22 @@
     <candy id="A14">
         <name>Toffee</name>
         <energy>
-            <energyAmount>620</energyAmount>
-            <energyUnit>kJ</energyUnit>
+            <energy-amount>620</energy-amount>
+            <energy-unit>kJ</energy-unit>
         </energy>
         <ingredients>
             <ingredient>
-                <ingredientName>water</ingredientName>
+                <ingredient-name>water</ingredient-name>
                 <amount>10</amount>
                 <unit>ml</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>sugar</ingredientName>
+                <ingredient-name>sugar</ingredient-name>
                 <amount>1</amount>
                 <unit>mg</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>flour</ingredientName>
+                <ingredient-name>flour</ingredient-name>
                 <amount>5</amount>
                 <unit>mg</unit>
             </ingredient>
@@ -36,22 +36,22 @@
     <candy id="A55">
         <name>string</name>
         <energy>
-            <energyAmount>328</energyAmount>
-            <energyUnit></energyUnit>
+            <energy-amount>328</energy-amount>
+            <energy-unit></energy-unit>
         </energy>
         <ingredients>
             <ingredient>
-                <ingredientName>water</ingredientName>
+                <ingredient-name>water</ingredient-name>
                 <amount>10</amount>
                 <unit>ml</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>sugar</ingredientName>
+                <ingredient-name>sugar</ingredient-name>
                 <amount>1</amount>
                 <unit>mg</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>flour</ingredientName>
+                <ingredient-name>flour</ingredient-name>
                 <amount>5</amount>
                 <unit>mg</unit>
             </ingredient>
@@ -68,22 +68,22 @@
     <candy id="A3">
         <name>string</name>
         <energy>
-            <energyAmount>400</energyAmount>
-            <energyUnit></energyUnit>
+            <energy-amount>400</energy-amount>
+            <energy-unit></energy-unit>
         </energy>
         <ingredients>
             <ingredient>
-                <ingredientName>water</ingredientName>
+                <ingredient-name>water</ingredient-name>
                 <amount>10</amount>
                 <unit>ml</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>sugar</ingredientName>
+                <ingredient-name>sugar</ingredient-name>
                 <amount>1</amount>
                 <unit>mg</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>flour</ingredientName>
+                <ingredient-name>flour</ingredient-name>
                 <amount>5</amount>
                 <unit>mg</unit>
             </ingredient>
@@ -100,22 +100,22 @@
     <candy id="AAAAD">
         <name>string</name>
         <energy>
-            <energyAmount>500</energyAmount>
-            <energyUnit></energyUnit>
+            <energy-amount>500</energy-amount>
+            <energy-unit></energy-unit>
         </energy>
         <ingredients>
             <ingredient>
-                <ingredientName>water</ingredientName>
+                <ingredient-name>water</ingredient-name>
                 <amount>10</amount>
                 <unit>ml</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>sugar</ingredientName>
+                <ingredient-name>sugar</ingredient-name>
                 <amount>1</amount>
                 <unit>mg</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>flour</ingredientName>
+                <ingredient-name>flour</ingredient-name>
                 <amount>5</amount>
                 <unit>mg</unit>
             </ingredient>
@@ -132,22 +132,22 @@
     <candy id="A1" vegan="true">
         <name>string</name>
         <energy>
-            <energyAmount>300</energyAmount>
-            <energyUnit></energyUnit>
+            <energy-amount>300</energy-amount>
+            <energy-unit></energy-unit>
         </energy>
         <ingredients>
             <ingredient>
-                <ingredientName>water</ingredientName>
+                <ingredient-name>water</ingredient-name>
                 <amount>10</amount>
                 <unit>ml</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>sugar</ingredientName>
+                <ingredient-name>sugar</ingredient-name>
                 <amount>1</amount>
                 <unit>mg</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>flour</ingredientName>
+                <ingredient-name>flour</ingredient-name>
                 <amount>5</amount>
                 <unit>mg</unit>
             </ingredient>
@@ -164,22 +164,22 @@
     <chocolate id="B5">
         <name>Ritter Sport</name>
         <energy>
-            <energyAmount>400</energyAmount>
-            <energyUnit></energyUnit>
+            <energy-amount>400</energy-amount>
+            <energy-unit></energy-unit>
         </energy>
         <ingredients>
             <ingredient>
-                <ingredientName>water</ingredientName>
+                <ingredient-name>water</ingredient-name>
                 <amount>10</amount>
                 <unit>ml</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>sugar</ingredientName>
+                <ingredient-name>sugar</ingredient-name>
                 <amount>1</amount>
                 <unit>mg</unit>
             </ingredient>
             <ingredient>
-                <ingredientName>flour</ingredientName>
+                <ingredient-name>flour</ingredient-name>
                 <amount>5</amount>
                 <unit>mg</unit>
             </ingredient>
