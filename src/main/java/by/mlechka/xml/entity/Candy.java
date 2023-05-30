@@ -42,8 +42,16 @@ public class Candy extends Sweet{
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Candy1{");
-        sb.append("variety='").append(variety).append('\'');
+        final StringBuilder sb = new StringBuilder("Candy{");
+        sb.append("id='").append(getId()).append('\'');
+        sb.append(", vegan=").append(getVegan());
+        sb.append(", name='").append(getName()).append('\'');
+        sb.append(", energy=").append(getEnergy());
+        sb.append(", ingredients=").append(getIngredients());
+        sb.append(", value=").append(getValue());
+        sb.append(", manufacturer='").append(getManufacturer()).append('\'');
+        sb.append(", expirationDate=").append(getExpirationDate());
+        sb.append(", variety='").append(variety).append('\'');
         sb.append('}');
         return sb.toString();
     }

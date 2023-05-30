@@ -3,29 +3,29 @@ package by.mlechka.xml.entity;
 import by.mlechka.xml.common.ChocolateVariety;
 import by.mlechka.xml.common.Shape;
 
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.List;
 
 public class Chocolate extends Sweet{
-    private ChocolateVariety variety;
+    
+    private ChocolateVariety chocolateType;
     private Shape shape;
 
     public Chocolate (){
             }
 
-    public Chocolate(String id, Boolean vegan, String name, Energy energy, List<Ingredient> ingredients, Value value, String manufacturer, LocalDateTime expirationDate, ChocolateVariety variety, Shape shape) {
+    public Chocolate(String id, Boolean vegan, String name, Energy energy, List<Ingredient> ingredients, Value value, String manufacturer, LocalDateTime expirationDate, ChocolateVariety chocolateType, Shape shape) {
         super(id, vegan, name, energy, ingredients, value, manufacturer, expirationDate);
-        this.variety = variety;
+        this.chocolateType = chocolateType;
         this.shape = shape;
     }
 
-    public ChocolateVariety getVariety() {
-        return variety;
+    public ChocolateVariety getChocolateType() {
+        return chocolateType;
     }
 
-    public void setVariety(ChocolateVariety variety) {
-        this.variety = variety;
+    public void setChocolateType(ChocolateVariety chocolateType) {
+        this.chocolateType = chocolateType;
     }
 
     public Shape getShape() {
@@ -43,13 +43,13 @@ public class Chocolate extends Sweet{
 
         Chocolate chocolate = (Chocolate) o;
 
-        if (variety != chocolate.variety) return false;
+        if (chocolateType != chocolate.chocolateType) return false;
         return shape == chocolate.shape;
     }
 
     @Override
     public int hashCode() {
-        int result = variety != null ? variety.hashCode() : 0;
+        int result = chocolateType != null ? chocolateType.hashCode() : 0;
         result = 31 * result + (shape != null ? shape.hashCode() : 0);
         return result;
     }
@@ -57,7 +57,15 @@ public class Chocolate extends Sweet{
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Chocolate{");
-        sb.append("variety=").append(variety);
+        sb.append("id='").append(getId()).append('\'');
+        sb.append(", vegan=").append(getVegan());
+        sb.append(", name='").append(getName()).append('\'');
+        sb.append(", energy=").append(getEnergy());
+        sb.append(", ingredients=").append(getIngredients());
+        sb.append(", value=").append(getValue());
+        sb.append(", manufacturer='").append(getManufacturer()).append('\'');
+        sb.append(", expirationDate=").append(getExpirationDate());
+        sb.append(", chocolateType=").append(chocolateType);
         sb.append(", shape=").append(shape);
         sb.append('}');
         return sb.toString();
