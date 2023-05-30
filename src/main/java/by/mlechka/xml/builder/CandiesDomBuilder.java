@@ -28,6 +28,7 @@ public class CandiesDomBuilder {
     static Logger logger = LogManager.getLogger(CandiesDomBuilder.class);
     public static final String XML_ATTRIBUTE_ID = "id";
     public static final String XML_ATTRIBUTE_VEGAN = "vegan";
+    public static final String DEFAULT_ENERGY_UNIT = "kcal" ;
 
     public CandiesDomBuilder() {
         sweets = new HashSet<>();
@@ -89,6 +90,9 @@ public class CandiesDomBuilder {
         Element energyElement = (Element) sweetElement.getElementsByTagName(CandyXmlTag.ENERGY.getValue()).item(0);
         energy.setAmount(Integer.parseInt(getElementTextContent(energyElement, CandyXmlTag.ENERGY_AMOUNT.getValue())));
         energy.setUnit(getElementTextContent(energyElement, CandyXmlTag.ENERGY_UNIT.getValue()));
+        if(energy.getUnit().isEmpty()){
+            energy.setUnit(DEFAULT_ENERGY_UNIT);
+        }
         sweet.setEnergy(energy);
         Value value = new Value();
         Element valueElement = (Element) sweetElement.getElementsByTagName(CandyXmlTag.VALUE.getValue()).item(0);
