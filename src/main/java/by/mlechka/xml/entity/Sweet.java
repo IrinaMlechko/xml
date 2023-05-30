@@ -1,18 +1,20 @@
 package by.mlechka.xml.entity;
 
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Sweet {
 
     private String id;
+    private Boolean vegan;
     private String name;
     private Energy energy;
     private List<Ingredient> ingredients = new ArrayList<>();
     private Value value = new Value();
     private String manufacturer;
-    private Instant expirationDate;
+    private LocalDateTime expirationDate;
 
     @Override
     public String toString() {
@@ -31,8 +33,9 @@ public abstract class Sweet {
     public Sweet() {
     }
 
-    public Sweet(String id, String name, Energy energy, List<Ingredient> ingredients, Value value, String manufacturer,Instant expirationDate) {
+    public Sweet(String id, Boolean vegan, String name, Energy energy, List<Ingredient> ingredients, Value value, String manufacturer,LocalDateTime expirationDate) {
         this.id = id;
+        this.vegan = vegan;
         this.name = name;
         this.energy = energy;
         this.ingredients = ingredients;
@@ -47,6 +50,14 @@ public abstract class Sweet {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public Boolean getVegan() {
+        return vegan;
+    }
+
+    public void setVegan(Boolean vegan) {
+        this.vegan = vegan;
     }
 
     public String getName() {
@@ -89,98 +100,13 @@ public abstract class Sweet {
         this.manufacturer = manufacturer;
     }
 
-    public Instant getExpirationDate() {
+    public LocalDateTime getExpirationDate() {
         return expirationDate;
     }
 
-    public void setExpirationDate(Instant expirationDate) {
+    public void setExpirationDate(LocalDateTime expirationDate) {
         this.expirationDate = expirationDate;
     }
 
-      public static class Value {
-
-        private int protein;
-        private int fat;
-        private int carbohydrates;
-
-        @Override
-        public String toString() {
-            final StringBuilder sb = new StringBuilder("\nValue:\n\tProtein:");
-            sb.append(protein).append("\n\tFat: ").append(fat);
-            sb.append("\n\tCarbohydrates: ").append(carbohydrates).append('\n');
-            return sb.toString();
-        }
-
-        public Value(int protein, int fat, int carbohydrates) {
-            this.protein = protein;
-            this.fat = fat;
-            this.carbohydrates = carbohydrates;
-        }
-
-        public Value() {
-        }
-
-        public int getProtein() {
-            return protein;
-        }
-
-        public void setProtein(int protein) {
-            this.protein = protein;
-        }
-
-
-        public int getFat() {
-            return fat;
-        }
-
-        public void setFat(int fat) {
-            this.fat = fat;
-        }
-
-
-        public int getCarbohydrates() {
-            return carbohydrates;
-        }
-
-        public void setCarbohydrates(int carbohydrates) {
-            this.carbohydrates = carbohydrates;
-        }
-    }
-    public static class Energy {
-
-        private int amount;
-        private String unit;
-
-        @Override
-        public String toString() {
-            final StringBuilder sb = new StringBuilder("\n\t");
-            sb.append(amount).append(" ").append(unit);
-            return sb.toString();
-        }
-
-        public Energy(int amount, String unit) {
-            this.amount = amount;
-            this.unit = unit;
-        }
-
-        public Energy() {
-        }
-
-        public int getAmount() {
-            return amount;
-        }
-
-        public void setAmount(int amount) {
-            this.amount = amount;
-        }
-
-        public String getUnit() {
-            return unit;
-        }
-
-        public void setUnit(String unit) {
-            this.unit = unit;
-        }
-    }
 }
 

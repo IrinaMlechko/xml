@@ -4,6 +4,7 @@ import by.mlechka.xml.common.ChocolateVariety;
 import by.mlechka.xml.common.Shape;
 
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class Chocolate extends Sweet{
@@ -13,8 +14,8 @@ public class Chocolate extends Sweet{
     public Chocolate (){
             }
 
-    public Chocolate(String id, String name, Energy energy, List<Ingredient> ingredients, Value value, String manufacturer, Instant expirationDate, ChocolateVariety variety, Shape shape) {
-        super(id, name, energy, ingredients, value, manufacturer, expirationDate);
+    public Chocolate(String id, Boolean vegan, String name, Energy energy, List<Ingredient> ingredients, Value value, String manufacturer, LocalDateTime expirationDate, ChocolateVariety variety, Shape shape) {
+        super(id, vegan, name, energy, ingredients, value, manufacturer, expirationDate);
         this.variety = variety;
         this.shape = shape;
     }
