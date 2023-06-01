@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
 <sweets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <candy id="A14">
+    <candy id="A14" vegan="true">
         <name>Toffee</name>
         <energy>
             <energy-amount>620</energy-amount>
@@ -34,7 +34,7 @@
         <variety>toffee</variety>
     </candy>
     <candy id="A55">
-        <name>string</name>
+        <name>Marshmallow Dream</name>
         <energy>
             <energy-amount>328</energy-amount>
             <energy-unit></energy-unit>
@@ -61,12 +61,12 @@
             <fat>272</fat>
             <carbohydrates>4094</carbohydrates>
         </value>
-        <manufacturer>string</manufacturer>
+        <manufacturer>Sweet Treats Co.</manufacturer>
         <expiration-date>2023-05-22T00:00:00</expiration-date>
         <variety>caramel</variety>
     </candy>
     <candy id="A3">
-        <name>string</name>
+        <name>Choco Crunch</name>
         <energy>
             <energy-amount>400</energy-amount>
             <energy-unit></energy-unit>
@@ -93,12 +93,12 @@
             <fat>2080</fat>
             <carbohydrates>1852</carbohydrates>
         </value>
-        <manufacturer>string</manufacturer>
+        <manufacturer>Chocolate Delights Inc.</manufacturer>
         <expiration-date>2023-05-22T00:00:00</expiration-date>
         <variety>drops</variety>
     </candy>
     <candy id="AAAAD">
-        <name>string</name>
+        <name>Candylicious Delight</name>
         <energy>
             <energy-amount>500</energy-amount>
             <energy-unit></energy-unit>
@@ -125,12 +125,12 @@
             <fat>1740</fat>
             <carbohydrates>2068</carbohydrates>
         </value>
-        <manufacturer>string</manufacturer>
+        <manufacturer>Sugar Rush Corp.</manufacturer>
         <expiration-date>2023-05-22T00:00:00</expiration-date>
         <variety>chocolate_filled</variety>
     </candy>
     <candy id="A1" vegan="true">
-        <name>string</name>
+        <name>Strawberry Bliss</name>
         <energy>
             <energy-amount>300</energy-amount>
             <energy-unit></energy-unit>
@@ -157,7 +157,7 @@
             <fat>966</fat>
             <carbohydrates>2846</carbohydrates>
         </value>
-        <manufacturer>string</manufacturer>
+        <manufacturer>Berry Sweets Ltd.</manufacturer>
         <expiration-date>2023-05-22T00:00:00</expiration-date>
         <variety>chocolate_filled</variety>
     </candy>
@@ -189,7 +189,40 @@
             <fat>2080</fat>
             <carbohydrates>1852</carbohydrates>
         </value>
-        <manufacturer>string</manufacturer>
+        <manufacturer>Ritter Sport Co.</manufacturer>
+        <expiration-date>2023-05-22T00:00:00</expiration-date>
+        <chocolate-type>white</chocolate-type>
+        <shape>square</shape>
+    </chocolate>
+    <chocolate id="B6">
+        <name>Milca</name>
+        <energy>
+            <energy-amount>400</energy-amount>
+            <energy-unit></energy-unit>
+        </energy>
+        <ingredients>
+            <ingredient>
+                <ingredient-name>water</ingredient-name>
+                <amount>10</amount>
+                <unit>ml</unit>
+            </ingredient>
+            <ingredient>
+                <ingredient-name>sugar</ingredient-name>
+                <amount>1</amount>
+                <unit>mg</unit>
+            </ingredient>
+            <ingredient>
+                <ingredient-name>flour</ingredient-name>
+                <amount>5</amount>
+                <unit>mg</unit>
+            </ingredient>
+        </ingredients>
+        <value>
+            <protein>1747</protein>
+            <fat>2080</fat>
+            <carbohydrates>1852</carbohydrates>
+        </value>
+        <manufacturer>Milca Co.</manufacturer>
         <expiration-date>2023-05-22T00:00:00</expiration-date>
         <chocolate-type>white</chocolate-type>
         <shape>square</shape>

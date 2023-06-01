@@ -1,16 +1,23 @@
 package by.mlechka.xml.validator;
 
-import java.io.*;
+import by.mlechka.xml.handler.SweetErrorHandler;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.xml.sax.SAXException;
+
 import javax.xml.XMLConstants;
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
-import by.mlechka.xml.handler.SweetErrorHandler;
-import org.xml.sax.SAXException;
+import java.io.File;
+import java.io.IOException;
 
 public class BaseValidatorMain {
+
+    static Logger logger = LogManager.getLogger(BaseValidatorMain.class);
+
     public static void main(String[] args) {
         String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
         String fileName = "src/main/resources/xml/sweets.xml";
@@ -24,7 +31,8 @@ public class BaseValidatorMain {
             validator.setErrorHandler(new SweetErrorHandler());
             validator.validate(source);
         } catch (SAXException | IOException e) {
-            System.err.println(fileName + " is not correct or valid");
+
+            logger.error(fileName + " is not correct or valid");
         }
     }
 }
