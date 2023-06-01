@@ -17,15 +17,17 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class SweetHandler extends DefaultHandler {
+
     private static final String ELEMENT_CANDY = "candy";
     private static final String ELEMENT_CHOCOLATE = "chocolate";
     private static final String ATTRIBUTE_ID = "id";
     private static final String ATTRIBUTE_VEGAN = "vegan";
-    static Logger logger = LogManager.getLogger(SweetHandler.class);
     private Set<Sweet> sweets;
     private Sweet current;
     private SweetXmlTag currentXmlTag;
     private EnumSet<SweetXmlTag> withText;
+
+    static Logger logger = LogManager.getLogger(SweetHandler.class);
 
     public SweetHandler() {
         sweets = new HashSet<>();
