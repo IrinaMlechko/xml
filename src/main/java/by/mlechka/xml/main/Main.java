@@ -1,12 +1,21 @@
 package by.mlechka.xml.main;
 
-//public class Main {
-//    public static void main(String[] args) {
-////    CandiesSaxBuilder saxBuilder = new CandiesSaxBuilder();
-////        saxBuilder.buildSetCandies("src/main/resources/xml/sweets.xml");
-////        System.out.println(saxBuilder.getCandies());}
-//
-////    CandiesDomBuilder domBuilder = new CandiesDomBuilder();
-////        domBuilder.buildSetCandies("src/main/resources/xml/sweets.xml");
-////        System.out.println(domBuilder.getCandies());}
-//}
+import by.mlechka.xml.builder.SweetsSaxBuilder;
+import by.mlechka.xml.exception.CustomException;
+import by.mlechka.xml.reader.PropertiesStreamReader;
+
+import java.net.URISyntaxException;
+import java.nio.file.Path;
+
+public class Main {
+
+    public static final String FILE_NAME = "xml/sweets.xml";
+
+    public static void main(String[] args) throws CustomException {
+        PropertiesStreamReader propertiesStreamReader = new PropertiesStreamReader();
+        Path path = propertiesStreamReader.getFileFromResource(FILE_NAME);
+        SweetsSaxBuilder saxBuilder = new SweetsSaxBuilder();
+        saxBuilder.buildSetSweets(String.valueOf(path));
+        System.out.println(saxBuilder.getSweets());}
+
+}

@@ -5,6 +5,7 @@ import by.mlechka.xml.type.SweetXmlTag;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.HashSet;
@@ -34,7 +35,7 @@ public class SweetHandler extends DefaultHandler {
             current.setId(attrs.getValue(0));
         }
         else {
-            SweetXmlTag temp = SweetXmlTag.valueOf(qName.toUpperCase());
+            SweetXmlTag temp = SweetXmlTag.valueOf(qName.toUpperCase().replace("-", "_"));
             if (withText.contains(temp)) {
                 currentXmlTag = temp;
             }
@@ -56,14 +57,16 @@ public class SweetHandler extends DefaultHandler {
                 case ENERGY_UNIT -> current.getEnergy().setUnit(data != "" ? data : "kcal");
                 case INGREDIENTS -> current.setIngredients(new ArrayList<>());
                 case INGREDIENT -> current.getIngredients().add(new Ingredient());
-                case INGREDIENTNAME -> current.getIngredients().get(current.getIngredients().size()-1).setName(data);
+                case INGREDIENT_NAME -> current.getIngredients().get(current.getIngredients().size()-1).setName(data);
                 case AMOUNT -> current.getIngredients().get(current.getIngredients().size()-1).setAmount(Integer.parseInt(data));
                 case UNIT -> current.getIngredients().get(current.getIngredients().size()-1).setUnit(data);
                 case PROTEIN -> current.getValue().setProtein(Integer.parseInt(data));
                 case FAT -> current.getValue().setFat(Integer.parseInt(data));
                 case CARBOHYDRATES -> current.getValue().setCarbohydrates(Integer.parseInt(data));
                 case MANUFACTURER -> current.setManufacturer(data);
-//                case VARIETY -> current.setVariety(data);
+                case EXPIRATION_DATE -> current.setExpirationDate(LocalDateTime.parse(data));
+//                case CHOCOLATE_TYPE -> current.set
+//                case VARIETY -> current.set;
                 default -> throw new EnumConstantNotPresentException(
                         currentXmlTag.getDeclaringClass(), currentXmlTag.name());
             }

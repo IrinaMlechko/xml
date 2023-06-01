@@ -1,5 +1,6 @@
 package by.mlechka.xml.reader;
 
+import by.mlechka.xml.exception.CustomException;
 import by.mlechka.xml.main.DomMain;
 
 import java.io.File;
@@ -10,10 +11,16 @@ import java.nio.file.Paths;
 
 public class PropertiesStreamReader {
 
-    public Path getFileFromResource(String fileName) throws URISyntaxException {
-        URL resource = getClass().getClassLoader().getResource(fileName);
-//        URL url = DomMain.class.getClassLoader().getResource("xml/sweets.xml");
-        Path path = Paths.get(resource.toURI());
+    public Path getFileFromResource(String fileName) throws CustomException {
+        URL resource = null;
+        Path path = null;
+        try{
+        resource = getClass().getClassLoader().getResource(fileName);
+        path = Paths.get(resource.toURI());}
+        catch(URISyntaxException ex){
+            throw new CustomException("Could to get path for " + fileName);
+        }
+
         if(resource==null){
             throw new IllegalArgumentException("File not found " + fileName);
         }
