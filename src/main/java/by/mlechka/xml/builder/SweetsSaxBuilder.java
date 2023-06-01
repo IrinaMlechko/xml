@@ -14,7 +14,7 @@ import java.util.Set;
 
 public class SweetsSaxBuilder {
 
-    public Set<Sweet> sweets;
+    private Set<Sweet> sweets;
     private SweetHandler handler = new SweetHandler();
     private XMLReader reader;
 
