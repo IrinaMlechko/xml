@@ -4,7 +4,6 @@ import by.mlechka.xml.builder.SweetsSaxBuilder;
 import by.mlechka.xml.exception.CustomException;
 import by.mlechka.xml.reader.PropertiesStreamReader;
 
-import java.net.URISyntaxException;
 import java.nio.file.Path;
 
 public class Main {

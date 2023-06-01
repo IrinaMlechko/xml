@@ -1,7 +1,10 @@
 package by.mlechka.xml.handler;
 
 import by.mlechka.xml.entity.*;
+import by.mlechka.xml.type.ChocolateVariety;
+import by.mlechka.xml.type.Shape;
 import by.mlechka.xml.type.SweetXmlTag;
+import by.mlechka.xml.type.Variety;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
@@ -18,6 +21,8 @@ public class SweetHandler extends DefaultHandler {
     private EnumSet<SweetXmlTag> withText;
     private static final String ELEMENT_CANDY = "candy";
     private static final String ELEMENT_CHOCOLATE = "chocolate";
+    private static final String ATTRIBUTE_ID = "id";
+    private static final String ATTRIBUTE_VEGAN = "vegan";
 
     public SweetHandler() {
         sweets = new HashSet<>();
@@ -29,10 +34,16 @@ public class SweetHandler extends DefaultHandler {
     public void startElement(String uri, String localName, String qName, Attributes attrs) {
         if (ELEMENT_CANDY.equals(qName)) {
             current = new Candy();
-            current.setId(attrs.getValue(0));
+            String id = attrs.getValue(ATTRIBUTE_ID);
+            current.setId(id);
+            String vegan = attrs.getValue(ATTRIBUTE_VEGAN);
+            current.setVegan(vegan != null ? Boolean.parseBoolean(vegan) : false);
         } else if(ELEMENT_CHOCOLATE.equals(qName)){
             current = new Chocolate();
-            current.setId(attrs.getValue(0));
+            String id = attrs.getValue(ATTRIBUTE_ID);
+            current.setId(id);
+            String vegan = attrs.getValue(ATTRIBUTE_VEGAN);
+            current.setVegan(vegan != null ? Boolean.parseBoolean(vegan) : false);
         }
         else {
             SweetXmlTag temp = SweetXmlTag.valueOf(qName.toUpperCase().replace("-", "_"));
@@ -66,7 +77,21 @@ public class SweetHandler extends DefaultHandler {
                 case MANUFACTURER -> current.setManufacturer(data);
                 case EXPIRATION_DATE -> current.setExpirationDate(LocalDateTime.parse(data));
 //                case CHOCOLATE_TYPE -> current.set
-//                case VARIETY -> current.set;
+                case VARIETY -> {
+                    if (current instanceof Candy) {
+                        ((Candy) current).setVariety(Enum.valueOf(Variety.class, data.toUpperCase().replace("-", "_")));
+                    }
+                }
+                case CHOCOLATE_TYPE -> {
+                    if (current instanceof Chocolate) {
+                        ((Chocolate) current).setChocolateType(Enum.valueOf(ChocolateVariety.class, data.toUpperCase().replace("-", "_")));
+                    }
+                }
+                case SHAPE -> {
+                    if (current instanceof Chocolate) {
+                        ((Chocolate) current).setShape(Enum.valueOf(Shape.class, data.toUpperCase().replace("-", "_")));
+                    }
+                }
                 default -> throw new EnumConstantNotPresentException(
                         currentXmlTag.getDeclaringClass(), currentXmlTag.name());
             }
