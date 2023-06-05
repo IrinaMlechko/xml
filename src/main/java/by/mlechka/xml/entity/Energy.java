@@ -13,13 +13,6 @@ public class Energy {
     public Energy() {
     }
 
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("");
-        sb.append(amount).append(" ").append(unit);
-        return sb.toString();
-    }
-
     public int getAmount() {
         return amount;
     }
@@ -34,5 +27,12 @@ public class Energy {
 
     public void setUnit(String unit) {
         this.unit = unit;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("");
+        sb.append(amount).append(" ").append(unit);
+        return sb.toString();
     }
 }

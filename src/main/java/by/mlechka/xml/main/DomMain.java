@@ -4,8 +4,6 @@ import by.mlechka.xml.builder.SweetsDomBuilder;
 import by.mlechka.xml.exception.CustomException;
 import by.mlechka.xml.reader.PropertiesStreamReader;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.nio.file.Path;
 
 public class DomMain {

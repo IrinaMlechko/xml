@@ -5,5 +5,5 @@ public enum Variety {
     DROPS,
     TOFFEE,
     CHOCOLATE,
-    CHOCOLATE_FILLED;
+    CHOCOLATE_FILLED
 }

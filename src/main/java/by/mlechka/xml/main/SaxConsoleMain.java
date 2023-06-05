@@ -4,6 +4,8 @@ import by.mlechka.xml.exception.CustomException;
 import by.mlechka.xml.handler.ConsoleSweetHandler;
 import by.mlechka.xml.handler.SweetErrorHandler;
 import by.mlechka.xml.reader.PropertiesStreamReader;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import javax.xml.parsers.ParserConfigurationException;
@@ -14,6 +16,7 @@ import java.nio.file.Path;
 
 public class SaxConsoleMain {
 
+    private static Logger logger = LogManager.getLogger(SaxConsoleMain.class);
     public static final String FILE_NAME = "xml/sweets.xml";
 
     public static void main(String[] args) throws CustomException {
@@ -27,7 +30,7 @@ public class SaxConsoleMain {
             reader.setErrorHandler(new SweetErrorHandler());
             reader.parse(String.valueOf(path));
         } catch (SAXException | IOException | ParserConfigurationException e) {
-            e.printStackTrace();
+            logger.error("Error by parsing file " + e.getMessage());
         }
     }
 }

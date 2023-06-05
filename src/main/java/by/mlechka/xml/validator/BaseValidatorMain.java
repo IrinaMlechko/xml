@@ -31,7 +31,6 @@ public class BaseValidatorMain {
             validator.setErrorHandler(new SweetErrorHandler());
             validator.validate(source);
         } catch (SAXException | IOException e) {
-
             logger.error(fileName + " is not correct or valid");
         }
     }

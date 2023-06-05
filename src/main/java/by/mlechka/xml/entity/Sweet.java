@@ -1,6 +1,5 @@
 package by.mlechka.xml.entity;
 
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,20 +14,6 @@ public abstract class Sweet {
     private Value value = new Value();
     private String manufacturer;
     private LocalDateTime expirationDate;
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("Sweet{");
-        sb.append("id='").append(id).append('\'');
-        sb.append(", name='").append(name).append('\'');
-        sb.append(", energy=").append(energy);
-        sb.append(", ingredients=").append(ingredients);
-        sb.append(", value=").append(value);
-        sb.append(", manufacturer='").append(manufacturer).append('\'');
-        sb.append(", expirationDate=").append(expirationDate);
-        sb.append('}');
-        return sb.toString();
-    }
 
     public Sweet() {
     }
@@ -106,6 +91,20 @@ public abstract class Sweet {
 
     public void setExpirationDate(LocalDateTime expirationDate) {
         this.expirationDate = expirationDate;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Sweet{");
+        sb.append("id='").append(id).append('\'');
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", energy=").append(energy);
+        sb.append(", ingredients=").append(ingredients);
+        sb.append(", value=").append(value);
+        sb.append(", manufacturer='").append(manufacturer).append('\'');
+        sb.append(", expirationDate=").append(expirationDate);
+        sb.append('}');
+        return sb.toString();
     }
 
 }

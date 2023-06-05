@@ -3,6 +3,8 @@ package by.mlechka.xml.builder;
 import by.mlechka.xml.entity.Sweet;
 import by.mlechka.xml.handler.SweetErrorHandler;
 import by.mlechka.xml.handler.SweetHandler;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
@@ -14,6 +16,7 @@ import java.util.Set;
 
 public class SweetsSaxBuilder {
 
+    static Logger logger = LogManager.getLogger(SweetsSaxBuilder.class);
     private Set<Sweet> sweets;
     private SweetHandler handler = new SweetHandler();
     private XMLReader reader;
@@ -26,7 +29,7 @@ public class SweetsSaxBuilder {
             reader = saxParser.getXMLReader();
             reader.setContentHandler(handler);
         } catch (ParserConfigurationException | SAXException e) {
-            e.printStackTrace();
+            logger.error("Error by parsing file " + e.getMessage());
             reader = null;
         }
         reader.setErrorHandler(new SweetErrorHandler());
@@ -41,7 +44,7 @@ public class SweetsSaxBuilder {
         try {
             reader.parse(filename);
         } catch (IOException | SAXException e) {
-            e.printStackTrace();
+            logger.error("Error by parsing file " + e.getMessage());
         }
         sweets = handler.getSweets();
     }

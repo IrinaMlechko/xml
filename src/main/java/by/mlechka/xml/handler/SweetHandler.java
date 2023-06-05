@@ -18,6 +18,7 @@ import java.util.Set;
 
 public class SweetHandler extends DefaultHandler {
 
+    static Logger logger = LogManager.getLogger(SweetHandler.class);
     private static final String ELEMENT_CANDY = "candy";
     private static final String ELEMENT_CHOCOLATE = "chocolate";
     private static final String ATTRIBUTE_ID = "id";
@@ -26,8 +27,6 @@ public class SweetHandler extends DefaultHandler {
     private Sweet current;
     private SweetXmlTag currentXmlTag;
     private EnumSet<SweetXmlTag> withText;
-
-    static Logger logger = LogManager.getLogger(SweetHandler.class);
 
     public SweetHandler() {
         sweets = new HashSet<>();
@@ -99,10 +98,7 @@ public class SweetHandler extends DefaultHandler {
                         ((Chocolate) current).setShape(Enum.valueOf(Shape.class, data.toUpperCase().replace("-", "_")));
                     }
                 }
-//                default -> throw new EnumConstantNotPresentException(
-//                        currentXmlTag.getDeclaringClass(), currentXmlTag.name());
-                default -> logger.debug("No tag found " +
-                        currentXmlTag.getDeclaringClass(), currentXmlTag.name());
+                default -> logger.debug("No tag found " + currentXmlTag.getDeclaringClass(), currentXmlTag.name());
             }
         }
         currentXmlTag = null;

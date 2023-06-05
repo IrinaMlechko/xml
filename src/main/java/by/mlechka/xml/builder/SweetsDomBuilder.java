@@ -40,7 +40,7 @@ public class SweetsDomBuilder {
         try {
             docBuilder = factory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
-            logger.error("Error by creating doc builder");
+            logger.error("Error by creating doc builder" + e.getMessage());
         }
     }
     public Set<Sweet> getSweets() {
@@ -62,7 +62,7 @@ public class SweetsDomBuilder {
                 }
             }
         } catch (IOException | SAXException e) {
-            e.printStackTrace();
+            logger.error("Error by building file " + filename + " " + e.getMessage());
         }
     }
 
@@ -126,8 +126,8 @@ public class SweetsDomBuilder {
     }
 
     private List<Ingredient> buildIngredients(Element ingredientsElement) {
-        List<Ingredient> ingredients = new ArrayList<Ingredient>();
-        NodeList ingredientList = ingredientsElement.getElementsByTagName("ingredient");
+        List<Ingredient> ingredients = new ArrayList();
+        NodeList ingredientList = ingredientsElement.getElementsByTagName(SweetXmlTag.INGREDIENT.getValue());
         for (int i = 0; i < ingredientList.getLength(); i++) {
             Element ingredientElement = (Element) ingredientList.item(i);
             Ingredient ingredient = buildIngredient(ingredientElement);
@@ -138,9 +138,9 @@ public class SweetsDomBuilder {
 
     private Ingredient buildIngredient(Element ingredientElement) {
         Ingredient ingredient = new Ingredient();
-        ingredient.setName(getElementTextContent(ingredientElement, "ingredient-name"));
-        ingredient.setAmount(Integer.parseInt(getElementTextContent(ingredientElement, "amount")));
-        ingredient.setUnit(getElementTextContent(ingredientElement, "unit"));
+        ingredient.setName(getElementTextContent(ingredientElement, SweetXmlTag.INGREDIENT_NAME.getValue()));
+        ingredient.setAmount(Integer.parseInt(getElementTextContent(ingredientElement, SweetXmlTag.AMOUNT.getValue())));
+        ingredient.setUnit(getElementTextContent(ingredientElement, SweetXmlTag.UNIT.getValue()));
         return ingredient;
     }
 }
