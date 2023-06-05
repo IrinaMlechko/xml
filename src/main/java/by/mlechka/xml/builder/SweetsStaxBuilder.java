@@ -5,6 +5,8 @@ import by.mlechka.xml.type.ChocolateVariety;
 import by.mlechka.xml.type.Shape;
 import by.mlechka.xml.type.SweetXmlTag;
 import by.mlechka.xml.type.Variety;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
@@ -21,6 +23,10 @@ import java.util.List;
 import java.util.Set;
 
 public class SweetsStaxBuilder {
+
+    public static final String XML_ATTRIBUTE_ID = "id";
+    public static final String XML_ATTRIBUTE_VEGAN = "vegan";
+    static Logger logger = LogManager.getLogger(SweetsDomBuilder.class);
     private Set<Sweet> sweets;
     private XMLInputFactory inputFactory;
 
@@ -36,10 +42,8 @@ public class SweetsStaxBuilder {
     public void buildSetSweets(String filename) {
         XMLStreamReader reader;
         String name;
-        try (FileInputStream inputStream = new FileInputStream(new File(filename)))
-        {
+        try (FileInputStream inputStream = new FileInputStream(new File(filename))) {
             reader = inputFactory.createXMLStreamReader(inputStream);
-// StAX parsing
             while (reader.hasNext()) {
                 int type = reader.next();
                 if (type == XMLStreamConstants.START_ELEMENT) {
@@ -47,33 +51,31 @@ public class SweetsStaxBuilder {
                     if (name.equals(SweetXmlTag.CANDY.getValue())) {
                         Candy candy = buildCandy(reader);
                         sweets.add(candy);
-                    } else if(name.equals(SweetXmlTag.CHOCOLATE.getValue())) {
+                    } else if (name.equals(SweetXmlTag.CHOCOLATE.getValue())) {
                         Chocolate chocolate = buildChocolate(reader);
                         sweets.add(chocolate);
                     }
                 }
             }
 
-        } catch(XMLStreamException | FileNotFoundException e){
-            e.printStackTrace();
-        } catch(IOException e){
-            e.printStackTrace();
+        } catch (XMLStreamException | FileNotFoundException e) {
+            logger.error("Error by reading or parsing file " + filename + " " + e.getMessage());
+        } catch (IOException e) {
+            logger.error("Error by reading or parsing file " + filename + " " + e.getMessage());
         }
     }
-//    }
 
     private Candy buildCandy(XMLStreamReader reader) throws XMLStreamException {
         Candy candy = new Candy();
-        candy.setId(reader.getAttributeValue(null, "id"));
-// null check
-        candy.setVegan(Boolean.valueOf(reader.getAttributeValue(null, "vegan")));
+        candy.setId(reader.getAttributeValue(null, XML_ATTRIBUTE_ID));
+        candy.setVegan(Boolean.valueOf(reader.getAttributeValue(null, XML_ATTRIBUTE_VEGAN)));
         String name;
         while (reader.hasNext()) {
             int type = reader.next();
             switch (type) {
                 case XMLStreamConstants.START_ELEMENT:
                     name = reader.getLocalName();
-                    switch (SweetXmlTag.valueOf(name.toUpperCase().replace("-","_"))) {
+                    switch (SweetXmlTag.valueOf(name.toUpperCase().replace("-", "_"))) {
                         case NAME -> {
                             candy.setName(getXMLText(reader));
                         }
@@ -83,23 +85,23 @@ public class SweetsStaxBuilder {
                         case INGREDIENTS -> {
                             candy.setIngredients(getXMLIngredients(reader));
                         }
-                        case VALUE-> {
+                        case VALUE -> {
                             candy.setValue(getXMLValue(reader));
                         }
-                        case MANUFACTURER-> {
+                        case MANUFACTURER -> {
                             candy.setManufacturer(getXMLText(reader));
                         }
-                        case EXPIRATION_DATE-> {
+                        case EXPIRATION_DATE -> {
                             candy.setExpirationDate(LocalDateTime.parse(getXMLText(reader)));
                         }
-                        case VARIETY-> {
+                        case VARIETY -> {
                             candy.setVariety(Variety.valueOf((getXMLText(reader).toUpperCase())));
                         }
                     }
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
-                    if (SweetXmlTag.valueOf(name.toUpperCase().replace("-","_")) == SweetXmlTag.CANDY) {
+                    if (SweetXmlTag.valueOf(name.toUpperCase().replace("-", "_")) == SweetXmlTag.CANDY) {
                         return candy;
                     }
             }
@@ -109,16 +111,15 @@ public class SweetsStaxBuilder {
 
     private Chocolate buildChocolate(XMLStreamReader reader) throws XMLStreamException {
         Chocolate chocolate = new Chocolate();
-        chocolate.setId(reader.getAttributeValue(null, "id"));
-// null check
-        chocolate.setVegan(Boolean.valueOf(reader.getAttributeValue(null, "vegan")));
+        chocolate.setId(reader.getAttributeValue(null, XML_ATTRIBUTE_ID));
+        chocolate.setVegan(Boolean.valueOf(reader.getAttributeValue(null, XML_ATTRIBUTE_VEGAN)));
         String name;
         while (reader.hasNext()) {
             int type = reader.next();
             switch (type) {
                 case XMLStreamConstants.START_ELEMENT:
                     name = reader.getLocalName();
-                    switch (SweetXmlTag.valueOf(name.toUpperCase().replace("-","_"))) {
+                    switch (SweetXmlTag.valueOf(name.toUpperCase().replace("-", "_"))) {
                         case NAME -> {
                             chocolate.setName(getXMLText(reader));
                         }
@@ -128,26 +129,26 @@ public class SweetsStaxBuilder {
                         case INGREDIENTS -> {
                             chocolate.setIngredients(getXMLIngredients(reader));
                         }
-                        case VALUE-> {
+                        case VALUE -> {
                             chocolate.setValue(getXMLValue(reader));
                         }
-                        case MANUFACTURER-> {
+                        case MANUFACTURER -> {
                             chocolate.setManufacturer(getXMLText(reader));
                         }
-                        case EXPIRATION_DATE-> {
+                        case EXPIRATION_DATE -> {
                             chocolate.setExpirationDate(LocalDateTime.parse(getXMLText(reader)));
                         }
-                        case SHAPE-> {
+                        case SHAPE -> {
                             chocolate.setShape(Shape.valueOf((getXMLText(reader).toUpperCase())));
                         }
-                        case CHOCOLATE_TYPE-> {
+                        case CHOCOLATE_TYPE -> {
                             chocolate.setChocolateType(ChocolateVariety.valueOf((getXMLText(reader).toUpperCase().replace("-", "_"))));
                         }
                     }
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
-                    if (SweetXmlTag.valueOf(name.toUpperCase().replace("-","_")) == SweetXmlTag.CHOCOLATE) {
+                    if (SweetXmlTag.valueOf(name.toUpperCase().replace("-", "_")) == SweetXmlTag.CHOCOLATE) {
                         return chocolate;
                     }
             }
